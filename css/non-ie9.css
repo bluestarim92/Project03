@@ -1,0 +1,13 @@
+﻿.twoDepth dd{list-style-type: square;}
+.icon_1,.icon_2,.icon_3,.icon_4,.icon_5,.icon_1_span,.icon_2_span,.icon_3_span,.icon_4_span,.icon_5_span{display:none;}
+.gnb{width: 425.9px;}
+
+.slide1 .pos{display: none;}
+.slide2 .post{display: none;}
+.slide3 .posti{display: none;}
+
+.slide1 ul>li{background: url(../images/slide1_1.png) no-repeat; background-size: 667px 376px;}
+.slide2 ul>li{background: url(../images/slide2_1.png) no-repeat; background-size: 324px 377px;}
+.slide3 ul>li{background: url(../images/slide3_1.jpg) no-repeat; background-size: 294px 120px;}
+
+.address > .f_add{width: 460px;}

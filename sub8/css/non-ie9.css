@@ -1,0 +1,20 @@
+﻿.twoDepth dd{list-style-type: square;}
+.icon_1,.icon_2,.icon_3,.icon_4,.icon_5,.icon_1_span,.icon_2_span,.icon_3_span,.icon_4_span,.icon_5_span{display:none;}
+
+.gnb{width: 425.9px;}
+
+.cal_f{vertical-align: 38px;}
+.cal_b{vertical-align: 38px;}
+.sel_t{vertical-align: 13px;}
+.midk{vertical-align: 24px;}
+.search_cont{vertical-align: 36px;}
+.btn_search{vertical-align: 12px;}
+.btn_ref{vertical-align: 11px;}
+
+.bbs_list .content_wrap{display: block;}
+.bbs_list > label{cursor: default;}
+
+.btn_confidence .pen{padding-left: 21px;}
+.aside2 input{display: none;}
+.tab_content.ie{display: none;}
+.address > .f_add{width: 460px;}
