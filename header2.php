@@ -50,9 +50,6 @@
 				<li class="gnb_icon4"><a href="https://www.nec.go.kr/site/sn/main.do">미래유권자</a></li>
 				<li class="eng"><a href="https://www.nec.go.kr/site/eng/main.do"><span class="english">English</span></a></li>
 			</ul>
-			<div class="counter_logout">
-					<span id="counter"></span> <span>후 자동로그아웃</span> <input type="button" value="연장" onclick="counter_reset()"/>
-			</div>
 		</div>
 	</div>
 </div>	

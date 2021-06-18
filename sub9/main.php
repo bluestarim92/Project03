@@ -1,3 +1,69 @@
+<script>
+function check_input()
+	{
+		if(!document.member_form.id.value) {
+			alert("아이디를 입력하세요!");
+			document.member_form.id.focus();
+			return;
+		}
+
+		if(!document.member_form.pass.value) {
+			alert("비밀번호를 입력하세요!");
+			document.member_form.pass.focus();
+			return;
+		}
+
+		if(!document.member_form.pass_confirm.value) {
+			alert("비밀번호확인을 입력하세요!");
+			document.member_form.pass_confirm.focus();
+			return;
+		}
+
+		if(!document.member_form.name.value) {
+			alert("이름을 입력하세요!");
+			document.member_form.name.focus();
+			return;
+		}
+
+		if(!document.member_form.email1.value) {
+			alert("이메일 주소를 입력하세요!");
+			document.member_form.email1.focus();
+			return;
+		}
+
+		if(!document.member_form.email2.value) {
+			alert("이메일 주소를 입력하세요!");
+			document.member_form.email2.focus();
+			return;
+		}
+
+		if(document.member_form.pass.value !=
+			 document.member_form.pass_confirm.value) {
+			alert("비밀번호가 일치하지 않습니다. \n다시 입력해 주세요!");
+			document.member_form.pass.focus();
+			document.member_form.pass.select();
+			return;
+		}
+
+		document.member_form.submit();
+	}
+
+	function reset_form() {
+		document.member_form.id.value = "";
+		document.member_form.pass.value = "";
+		document.member_form.pass_confirm.value = "";
+		document.member_form.name.value = "";
+		document.member_form.email1.value = "";
+		document.member_form.email2.value = "";
+		document.member_form.id.focus();
+	}
+
+	function check_id() {
+		window.open("member_check_id.php?id=" + document.member_form.id.value,
+			"IDcheck",
+			"left=700, top=300, width=350, height=200, scrollbars=no, resizable=yes");
+	} 
+</script>
 <div id="wrapper">
 		<div id="container">
 			<div class="asidewrap">
@@ -39,10 +105,10 @@
 								<span class="title">회원정보</span>		
 									<div class="subsidemenu">
 										<ul class="sidecontent cf">		
-											<li><a href="login_form.php">로그인</a></li>		
+											<li><a href="#">로그인</a></li>		
 											<li><a href="#">아이디찾기</a></li>
 											<li><a href="#">비밀번호 재설정</a></li>
-											<li><a href="../sub9/member_form.php">회원가입</a></li>
+											<li><a href="member_form.php">회원가입</a></li>
 										</ul>
 									</div>
 							</div>
@@ -142,8 +208,8 @@
 			<div class="article1">
 				<div class="menulog">
 					<!-- 왼쪽 메뉴 -->
-					<span class="homeIcon"></span>
-					<span class="location">HOME > 홈페이지도우미 > 회원정보 > 로그인 </span>
+					<span class="homeicon"></span>
+					<span class="location">HOME > 홈페이지도우미 > 회원정보 > 회원가입 </span>
 					<!-- 오른쪽 좋아요, SNS, 프린트 -->
 					<span class="print_btn"></span>
 					<span class="sns_n"></span>
@@ -152,82 +218,62 @@
 					<span class="sns_f"></span>
 					<span class="like_btn"></span>
 				</div>
-				<h4>회원로그인</h4>
-				<div class="loginBox">
-					<div class="log_box">
-						<p class="ex">회원님의 아이디 / 비밀번호를 입력해 주십시오.</p>
-						<p class="log">
-							<span>
-								<input id="cuId" name="cuId" type="text" class="log_ctrl guideText" value="아이디" title="아이디" />
-							</span>
-						</p>
-						<p class="log">
-							<span>
-								<input id="cuPwd" name="cuPwd" type="password" class="log_ctrl guideText" value="패스워드" title="패스워드" autocomplete="off" maxlength="30"/>
-							</span>
-						</p>
-						<p class="log">
-							<span>
-								<input class="btn_log" type="button" value="로그인"/>
-							</span>
-						</p>
-						<div class="find_sign_up">
-							<ul>
-								<li class="txt_li"><a href="#">아이디찾기</a></li>
-								<li class="bar">|</li>
-								<li class="txt_li"><a href="#">비밀번호 재설정</a></li>
-								<li class="bar">|</li>
-								<li class="txt_li"><a href="../sub9/member_form.php">회원가입</a></li>
-							</ul>
-						</div>
+				<h4>회원가입</h4>
+				<div class="sign_upbox">
+					<div class="join_box">
+						<form name="member_form" method="post" action="member_insert.php">
+							<h3>회원가입을 위해 정보를 입력해 주세요.</h3>
+							<div class="form id">
+								<div class="col1">아이디</div>
+								<div class="col2">
+									<input type="text" name="id">
+								</div>
+								<div class="btn_check">
+									<a href="#"><img src="./images/check_id.gif" 
+										onclick="check_id()"></a>
+								</div>
+							</div>
+							<div class="clear"></div>
+
+							<div class="form">
+								<div class="col1">비밀번호</div>
+								<div class="col2">
+									<input type="password" name="pass">
+								</div>
+							</div>
+							<div class="clear"></div>
+
+							<div class="form">
+								<div class="col1">비밀번호확인</div>
+								<div class="col2">
+									<input type="password" name="pass_confirm">
+								</div>
+							</div>
+							<div class="clear"></div>
+
+							<div class="form">
+								<div class="col1">이름</div>
+								<div class="col2">
+									<input type="text" name="name">
+								</div>
+							</div>
+							<div class="clear"></div>
+
+							<div class="form email">
+								<div class="col1">이메일</div>
+								<div class="col2 email">
+									<input type="text" name="email1"><span>@</span><input type="text" name="email2">
+								</div>
+							</div>
+							<div class="clear"></div>
+							<div class="buttons">
+								<img style="cursor:pointer" src="./images/button_save.gif" onclick="check_input()">&nbsp;
+								<img id="reset_button" style="cursor:pointer" src="./images/button_reset.gif"
+									onclick="reset_form()">
+							</div>
+						</form>
 					</div>
 				</div>
-				<h4>비회원로그인</h4>
-				<ul>
-					<li>비회원 인증을 통해 게시한 작성글 및 답변에 대한 확인은 <strong>작성 당시 인증 받은 방식(휴대폰, 아이핀, 네이버, 카카오)을 통해서만 확인 가능하오니</strong> 회원가입을 통해 질의 등을 하시기 바랍니다.</li>
-					<li class="authBox">
-						<ul>
-							<li class="auth_box">
-								<div class="inner_box">
-									<p class="tab_auth">
-										<a href="#" title="새창열림" class="btn_auth">아이핀인증</a>
-									</p>
-									<p>
-										별도의 회원가입 없이 아이핀 (I-PIN)인증만으로 각종 민원ㆍ신고 서비스를 이용할 수 있습니다.
-									</p>
-								</div>
-							</li>
-							<li class="bar"></li>
-							<li class="auth_box">
-								<div class="inner_box">
-									<p class="tab_auth">
-										<a href="#" title="새창열림" class="btn_auth">휴대폰인증</a>
-									</p>
-									<p>
-										본인 명의로 가입된 휴대폰으로 본인확인이 가능합니다. 입력하신 정보는 별도 저장되지 않으며 통신사를 통한 본인확인용으로만 이용됩니다. 
-									</p>
-								</div>
-							</li>
-							<li class="bar"></li>
-							<li class="auth_box">
-								<div class="inner_box">
-									<p class="tab_kakao_auth">
-										<a href="#" title="새창열림" class="btn_kakao_auth">카카오톡 로그인</a>
-									</p>
-									<p class="tab_naver_auth">
-										<a href="#" title="새창열림" class="btn_naver_auth">네이버 로그인</a>
-									</p>
-								</div>
-							</li>
-						</ul>
-					</li>
-					<li><strong>Internet Explorer11 사용자</strong>분들은 <span class="mark_p">"인터넷옵션>고급 탭"에 TLS1.0, 1.1, 1.2 항목에 모두 체크</span>가 되어있어야 로그인이 가능합니다.
-					크롬브라우저를 추천드립니다.
-					</li>
-					<li><strong>2013년 12월 9일 이전 가입자의 경우</strong> <span class="mark_p">최초 1회 로그인하여 추가 인증</span>을 해야 기존 작성하신 민원을 확인하실 수 있습니다.</li>
-					<li>중앙선거관리위원회는 서비스 향상, 사이트 이용에 불편함이 없도록 최선을 다하겠습니다.</li>
-					<li>귀하의 개인정보는 사전동의 없이 공개되지 않으며, 개인정보보호정책에 의해 보호받고 있습니다.</li>
-				</ul>
 			</div>
 		</div>
 	</div>

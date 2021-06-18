@@ -15,11 +15,11 @@
 ?>
 <div id="header">
 	<div class="headerwrap">
-		<a href="index.php"><div class="logo"></div></a>
+		<a href="../index.php"><div class="logo"></div></a>
 		<div class="search_box">
 			<input type="text" id="search_bar" name="search_bar" class="guideText" value="검색어를 입력하세요"/>
 			<a href="#" class="btn_search_box">
-				<img src="images/btn_gnbSch.png" alt="검색버튼"/>
+				<img src="../images/btn_gnbSch.png" alt="검색버튼"/>
 			</a>
 		</div>
 		<div class="gnb">
@@ -27,8 +27,8 @@
 <?php  
 	if(!$userid) {
 ?>	
-				<li class="gnb_icon1"><a href="sub9/member_form.php">회원가입</a></li>
-				<li class="gnb_icon2"><a href="sub6/login_form.php">로그인</a></li>
+				<li class="gnb_icon1"><a href="../sub9/member_form.php">회원가입</a></li>
+				<li class="gnb_icon2"><a href="../sub6/login_form.php">로그인</a></li>
 <?php 	
 	} else {
 		$logged = $username."(".$userid.")님[Level:".$userlevel1.", Point:".$userpoint."]";
@@ -50,9 +50,6 @@
 				<li class="gnb_icon4"><a href="https://www.nec.go.kr/site/sn/main.do">미래유권자</a></li>
 				<li class="eng"><a href="https://www.nec.go.kr/site/eng/main.do"><span class="english">English</span></a></li>
 			</ul>
-			<div class="counter_logout">
-					<span id="counter"></span> <span>후 자동로그아웃</span> <input type="button" value="연장" onclick="counter_reset()"/>
-			</div>
 		</div>
 	</div>
 </div>	
@@ -62,7 +59,7 @@
 			<li class="nav_1"><a href="sub1/sub1.html" class="tooltip" tabindex="1" title="질의·신고제보는 여기에서">국민참여소통</a>
 				<div class="two_inner1">
 					<div class="left_nav_icon1">
-						<div class="icon_1 cf"><img src="images/bg_gnb_icon1.png" alt=""/></div>
+						<div class="icon_1 cf"><img src="../images/bg_gnb_icon1.png" alt=""/></div>
 						<span class="icon_1_span">국민참여소통</span>
 						</div>
 						<div class="two_depth cf">
