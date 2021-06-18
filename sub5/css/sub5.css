@@ -3,19 +3,19 @@ a{color:#666666;}
 /* body{background:url(../images/nec_Introduce.png) no-repeat center top; height: 5000px;} */
 #wrapper{width: 100%; height: 1760px; background: #e0f3fa; margin-top:4px;}
 #container{width: 1420px; height: 1760px; text-align: justify;  margin: 0 auto;}
-	.asideWrap{display:block; float: left; width: 298px; height: 1653px; margin : 38px 10px 0px 33px;}
-		.aside1{display:block; float:left; width: 298px; height: 1034px;  background: #ffffff; margin-bottom:10px;}
-		.aside1 h3{padding: 25px 30px; background: #008d96 url(../../images/bg_lnbTit.png) no-repeat 35px bottom; font-size: 2.1em; color: #ffffff; font-weight: bold; letter-spacing: -1px;}
-		.aside1 ul{padding: 8%;}
-		.aside1>ul>li{background: url(../../images/bu_lnb1_off.gif) no-repeat left 8px;padding-left: 7px; border-bottom: 1px solid #cccccc; margin-top: 9px; font-weight: normal;}
-		.aside1>ul>li.active{background: url(../../images/bu_lnb1_on.png) no-repeat left 5px; padding-left: 15px; font-weight: bold;}
-		.aside1>ul>li.active>a{font-weight: bold;}
-		.aside1>ul>li>a:hover{text-decoration: underline;}
-		.aside1>ul>li>ul{padding: 8px 0 0 0;}
-		.aside1>ul>li>ul>li{background: url(../../images/bu_lnb2.gif) no-repeat left 14px; line-height: 2.1; padding-left: 10px;}
-		.aside1>ul>li>ul>li>a.active{color:#ed63ac; font-weight: bold;}
-		.aside1>ul>li>ul>li>a{color: #777777; font-weight: normal;}
-		.aside1>ul>li>ul>li>a:hover{text-decoration: underline;}
+	.asidewrap{display:block; float: left; width: 298px; height: 1653px; margin : 38px 10px 0px 33px;}
+		.aside1{display:block; float:left; width: 298px; height: auto;  background: #ffffff; margin-bottom:8px; overflow: hidden; position: relative;}
+		.aside1 .aside1_subj{padding: 25px 30px; background: #008d96 url(../../images/bg_lnbTit.png) no-repeat 35px bottom; font-size: 2.1em; color: #ffffff; font-weight: bold; letter-spacing: -1px;}
+		.aside1 .sidewrap{width: 100%; height: auto;}
+		.aside1 .sidewrap .sidemenu{width: 100%; height: auto;}
+		.aside1 .sidewrap .sidemenu .title{width: 280px; height: 60px; display: block; font-size: 1.1em; line-height: 60px; padding-left: 18px; color: #666666; border-bottom: 1px solid #dddddd;}
+		.aside1 .sidewrap .sidemenu .subsidemenu{display: none; overflow: hidden; height: auto; transition: all 1s;}
+		.aside1 .sidewrap .sidemenu.on span{color: #ffffff; background: #ed63ac;}
+		.aside1 .sidewrap .sidemenu.on .subsidemenu{display: block;}
+		.aside1 .sidewrap .sidemenu .subsidemenu .sidecontent{padding: 10px 20px; box-sizing: border-box; padding: 10px 20px; width: 100%; height: 100%; background: #fcfcfc; overflow: hidden; transition: all 0.6s; border-top: 1px solid #dddddd;}
+		.aside1 .sidewrap .sidemenu .subsidemenu .sidecontent li{line-height: 25px; font-size: 1em;}
+		.aside1 .sidewrap .sidemenu .subsidemenu .sidecontent li.on a{color: #ed63ac; font-weight: bold;}
+		.aside1 .sidewrap .sidemenu .subsidemenu .sidecontent li a{color: #666666;}
 		
 		.aside2{display: block; background: #ffffff; float:left; width: 274px; height: 213px; margin-bottom:10px; padding: 12px;}
 		.aside2 h3{text-align: left; font-size: 14px; margin-bottom: 12px;}

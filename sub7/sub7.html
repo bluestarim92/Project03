@@ -7,7 +7,7 @@
 	<meta name="Author" content="임현진"/>
 	<meta name="Keywords" content="포트폴리오, Portfolio, 임현진의 포트폴리오, Hyeonjin's Portfolio"/>
 	<meta name="Description" content="임현진의 포트폴리오를 소개합니다."/>
-	<title>PHP Project</title>
+	<title>jQuery Project</title>
 	<link rel="stylesheet" href="css/common_style.css"/>
 	<link rel="stylesheet" href="css/sub7.css"/>
 	<link rel="stylesheet" href="css/common_style2.css"/>
@@ -15,16 +15,20 @@
 	<link rel="icon" href="../images/favicon.ico" type="image/x-icon"/>
 	<script src="../js/jquery-1.9.1.min.js"></script>
 	<script src="../js/guideText.js"></script>
+	<script src="../js/prefixfree.min.js"></script>
+	<script src="../js/html5div.js"></script>
+	<script src="../js/html5shiv.js"></script>
 	<script src="js/board.js"></script>
 	 <script src="../js/script.js"></script>
+	 <script src="js/sub7.js"></script>
 	<!--[if lte ie 8]>
 		<link href="css/non-ie9.css"/ rel="stylesheet">
 	 <![endif] -->
 </head>
 <body>
 	<div id="header">
-		<div class="headerWrap">
-			<a href="../index.html"><div class="logo"></div></a>
+		<div class="headerwrap">
+			<a href="../index.php"><div class="logo"></div></a>
 			<div class="search_box">
 				<input type="text" id="search_bar" name="search_bar" class="guideText" value="검색어를 입력하세요"/>
 				<a href="#" class="btn_search_box">
@@ -43,17 +47,17 @@
 		</div>
 	</div>
 	<div id="nav">
-		<div class="oneInner">
-			<ul class="oneDepth">
+		<div class="one_inner">
+			<ul class="one_depth">
 				<li class="nav_1"><a href="../sub1/sub1.html" tabindex="1" >국민참여소통</a>
-					<div class="twoInner1">
+					<div class="two_inner1">
 						<div class="left_nav_icon1">
 							<div class="icon_1"><img src="../images/bg_gnb_icon1.png" alt=""/></div>
 							<span class="icon_1_span">국민참여소통</span>
 							</div>
-							<div class="twoDepth cf">
+							<div class="two_depth cf">
 								<dl>
-									<div class="line_B">
+									<div class="line_b">
 										<dt><a href="../sub6/sub6.html">질의·신고</a></dt>
 										<dd><a href="../sub1/sub1.html">정치관계법질의</a></dd>
 										<dd><a href="../sub2/sub2.html">정치관계법 위반행위신고</a></dd>
@@ -66,7 +70,7 @@
 									</div>
 								</dl>	
 								<dl>
-									<div class="line_B">
+									<div class="line_b">
 										<dt><a href="../sub5/sub5.html">정보공개청구</a></dt>
 										<dd><a href="../sub2/sub2.html">정보공개제도</a></dd>
 										<dd><a href="../sub4/sub4.html">정보목록</a></dd>
@@ -76,20 +80,20 @@
 									</div>
 								</dl>
 								<dl>
-									<div class="line_B">
+									<div class="line_b">
 										<dt><a href="../sub4/sub4.html">세입·세출 현황</a></dt>
 										<dd><a href="../sub1/sub41.html">세입·세출사업별 설명자료 보기</a></dd>
 										<dd><a href="../sub3/sub3.html">세입·세출 현황 보기</a></dd>
 									</div>
 								</dl>
 								<dl>
-									<div class="line_B">
+									<div class="line_b">
 										<dt><a href="../sub6/sub6.html">공직자윤리위원회</a></dt>
 										<dd><a href="../sub4/sub4.html">취업이력 공시</a></dd>
 									</div>
 								</dl>	
 								<dl>
-									<div class="line_B">
+									<div class="line_b">
 										<dt><a href="../sub3/sub3.html">민주시민교육</a></dt>
 										<dd><a href="../sub6/sub6.html">연수계획</a></dd>
 										<dd><a href="../sub4/sub4.html">월별연수일정</a></dd>
@@ -99,7 +103,7 @@
 									</div>
 								</dl>
 								<dl>
-									<div class="line_B">
+									<div class="line_b">
 										<dt><a href="../sub6/sub6.html">개인정보보유현황</a></dt>
 										<dd><a href="../sub3/sub3.html">개인정보보유현황</a></dd>
 									</div>
@@ -110,14 +114,14 @@
 					<li class="bar">|</li>
 					<!-- <li class="bar">|</li> -->
 					<li class="nav_2"><a href="../sub2/sub2.html" tabindex="2">알림</a>
-						<div class="twoInner2">
+						<div class="two_inner2">
 							<div class="left_nav_icon2">
 								<div class="icon_2"></div>
 								<span class="icon_2_span">알림</span>
 							</div>
-							<div class="twoDepth cf">
+							<div class="two_depth cf">
 								<dl>
-									<div class="line_B">
+									<div class="line_b">
 										<dt><a href="../sub2/sub2.html">위원회소식</a></dt>
 										<dd><a href="../sub2/sub2.html">위원회소식</a></dd>
 										<dd><a href="../sub4/sub4.html">공지</a></dd>
@@ -126,7 +130,7 @@
 									</div>
 								</dl>	
 								<dl>
-									<div class="line_B">
+									<div class="line_b">
 										<dt><a href="../sub4/sub4.html">보도자료</a></dt>
 										<dd><a href="../sub6/sub6.html">보도자료</a></dd>
 										<dd><a href="../sub3/sub3.html">해명·안내자료</a></dd>
@@ -135,14 +139,14 @@
 									</div>
 								</dl>
 								<dl>
-									<div class="line_B">
+									<div class="line_b">
 										<dt><a href="../sub3/sub3.html">기사·영상</a></dt>
 										<dd><a href="../sub2/sub2.html">언론기사</a></dd>
 										<dd><a href="../sub5/sub5.html">언론 영상</a></dd>
 									</div>
 								</dl>
 								<dl>
-									<div class="line_B">
+									<div class="line_b">
 										<dt><a href="../sub4/sub4.html">스토리 텔링</a></dt>
 										<dd><a href="../sub2/sub2.html">스토리 텔링</a></dd>
 										<dd><a href="../sub1/sub1.html">요모조모</a></dd>
@@ -153,14 +157,14 @@
 					</li>
 					<li class="bar">|</li>
 					<li class="nav_3"><a href="../sub3/sub3.html" tabindex="3" >분야별정보</a>
-						<div class="twoInner3">
+						<div class="two_inner3">
 							<div class="left_nav_icon3">
 								<div class="icon_3"></div>
 								<span class="icon_3_span">분야별정보</span>
 							</div>
-							<div class="twoDepth cf">
+							<div class="two_depth cf">
 								<dl>
-									<div class="line_B">
+									<div class="line_b">
 										<dt><a href="../sub2/sub2.html">선거정보</a></dt>
 										<dd><a href="../sub2/sub2.html">선거통계</a></dd>
 										<dd><a href="../sub4/sub4.html">역대선거통계</a></dd>
@@ -175,7 +179,7 @@
 									</div>
 								</dl>	
 								<dl>
-									<div class="line_B">
+									<div class="line_b">
 										<dt><a href="../sub4/sub4.html">재외선거</a></dt>
 										<dd><a href="../sub6/sub46.html">공지</a></dd>
 										<dd><a href="../sub3/sub3.html">보도자료</a></dd>
@@ -185,7 +189,7 @@
 									</div>
 								</dl>
 								<dl>
-									<div class="line_B">
+									<div class="line_b">
 										<dt><a href="../sub3/sub3.html">선거법령정보</a></dt>
 										<dd><a href="../sub2/sub2.html">법령검색</a></dd>
 										<dd><a href="../sub5/sub5.html">질의검색</a></dd>
@@ -193,7 +197,7 @@
 									</div>
 								</dl>
 								<dl>
-									<div class="line_B">
+									<div class="line_b">
 										<dt><a href="../sub4/sub4.html">정책·공약알리미</a></dt>
 										<dd><a href="../sub2/sub2.html">희망공약 제안</a></dd>
 										<dd><a href="../sub1/sub1.html">정책·공약 보기</a></dd>
@@ -201,7 +205,7 @@
 									</div>
 								</dl>
 								<dl>
-									<div class="line_B">
+									<div class="line_b">
 										<dt><a href="../sub5/sub5.html">정당·정치자금</a></dt>
 										<dd><a href="../sub6/sub6.html">정당정보</a></dd>
 										<dd><a href="../sub4/sub4.html">강령·당헌</a></dd>
@@ -213,7 +217,7 @@
 									</div>
 								</dl>
 								<dl>
-									<div class="line_B">
+									<div class="line_b">
 										<dt><a href="../sub6/sub6.html">미래유권자</a></dt>
 										<dd><a href="../sub1/sub1.html">선거관리위원회는?</a></dd>
 										<dd><a href="../sub2/sub2.html">선거아카데미</a></dd>
@@ -223,7 +227,7 @@
 									</div>
 								</dl>
 								<dl>
-									<div class="line_B">
+									<div class="line_b">
 										<dt><a href="../sub4/sub4.html">기타정보</a></dt>
 										<dd><a href="../sub1/sub1.html">선거방송토론</a></dd>
 										<dd><a href="../sub2/sub2.html">선거여론조사</a></dd>
@@ -238,14 +242,14 @@
 					</li>
 					<li class="bar">|</li>
 					<li class="nav_4"><a href="../sub4/sub4.html" tabindex="4" >통합자료실</a>
-						<div class="twoInner4">
+						<div class="two_inner4">
 							<div class="left_nav_icon4">
 								<div class="icon_4"></div>
 								<span class="icon_4_span">통합자료실</span>
 							</div>
-							<div class="twoDepth cf">
+							<div class="two_depth cf">
 							<dl>
-								<div class="line_B">
+								<div class="line_b">
 									<dt><a href="../sub3/sub3.html">선거자료</a></dt>
 									<dd><a href="../sub3/sub3.html">선거·정당·정치자금</a></dd>
 									<dd><a href="../sub1/sub1.html">정치관계법 개정의견</a></dd>
@@ -258,7 +262,7 @@
 								</div>
 							</dl>	
 							<dl>
-								<div class="line_B">
+								<div class="line_b">
 									<dt><a href="../sub2/sub2.html">홍보자료</a></dt>
 									<dd><a href="../sub1/sub1.html">영상</a></dd>
 									<dd><a href="../sub3/sub3.html">이미지</a></dd>
@@ -267,7 +271,7 @@
 								</div>
 							</dl>	
 							<dl>
-								<div class="line_B">
+								<div class="line_b">
 									<dt><a href="../sub3/sub3.html">재외선거홍보자료</a></dt>
 									<dd><a href="../sub2/sub2.html">영상</a></dd>
 									<dd><a href="../sub4/sub4.html">이미지</a></dd>
@@ -275,7 +279,7 @@
 								</div>
 							</dl>
 							<dl>
-								<div class="line_B">
+								<div class="line_b">
 									<dt><a href="../sub4/sub4.html">민주시민교육자요</a></dt>
 									<dd><a href="../sub1/sub1.html">기본콘텐츠</a></dd>
 									<dd><a href="../sub2/sub2.html">맞춤형콘텐츠</a></dd>
@@ -284,7 +288,7 @@
 								</div>
 							</dl>
 							<dl>
-								<div class="line_B">
+								<div class="line_b">
 									<dt><a href="../sub5/sub5.html">선거정보도서관</a></dt>
 									<dd><a href="../sub2/sub2.html">소장자료</a></dd>
 									<dd><a href="../sub1/sub1.html">전자정보자료</a></dd>
@@ -300,14 +304,14 @@
 				</li>
 				<li class="bar">|</li>
 				<li class="nav_5"><a href="../sub5/sub5.html" tabindex="5" >위원회소개</a>
-					<div class="twoInner5">
+					<div class="two_inner5">
 						<div class="left_nav_icon5">
 							<div class="icon_5"></div>
 							<span class="icon_5_span">위원회소개</span>
 						</div>
-						<div class="twoDepth cf">
+						<div class="two_depth cf">
 							<dl>
-								<div class="line_B">
+								<div class="line_b">
 									<dt><a href="../sub4/sub4.html">개요</a></dt>
 									<dd><a href="../sub4/sub4.html">위원장 인사말</a></dd>
 									<dd><a href="../sub3/sub3.html">지위 및 연혁</a></dd>
@@ -317,7 +321,7 @@
 								</div>
 							</dl>	
 							<dl>	
-								<div class="line_B">
+								<div class="line_b">
 									<dt><a href="../sub1/sub1.html">위원장, 상임위원 및 위원</a></dt>
 									<dd><a href="../sub6/sub6.html">위원장소개</a></dd>
 									<dd><a href="../sub3/sub3.html">상임위원소개</a></dd>	
@@ -325,7 +329,7 @@
 								</div>
 							</dl>	
 							<dl>
-								<div class="line_B">
+								<div class="line_b">
 									<dt><a href="../sub3/sub3.html">조직안내</a></dt>
 									<dd><a href="../sub1/sub1.html">조직구성</a></dd>
 									<dd><a href="../sub2/sub2.html">중앙</a></dd>
@@ -337,7 +341,7 @@
 								</div>
 							</dl>
 							<dl>
-								<div class="line_B">
+								<div class="line_b">
 									<dt><a href="../sub4/sub4.html">위원회상징 및 홍보대사</a></dt>
 									<dd><a href="../sub2/sub2.html">CI</a></dd>
 									<dd><a href="../sub1/sub1.html">캐릭터</a></dd>
@@ -345,14 +349,14 @@
 								</div>
 							</dl>
 							<dl>
-								<div class="line_B">
+								<div class="line_b">
 									<dt><a href="../sub5/sub5.html">찾아오시는길</a></dt>
 									<dd><a href="../sub1/sub1.html">과천청사</a></dd>
 									<dd><a href="../sub2/sub2.html">관악청사</a></dd>
 								</div>
 							</dl>
 							<dl>
-								<div class="line_B">
+								<div class="line_b">
 									<dt><a href="../sub6/sub6.html">방문안내</a></dt>
 									<dd><a href="../sub4/sub4.html">방문정보</a></dd>
 									<dd><a href="../sub1/sub1.html">방문신청</a></dd>
@@ -369,39 +373,51 @@
 	<div id="bg_100">
 		<div id="wrapper">	
 			<div id="container">
-				<div class="asideWrap">
+				<div class="asidewrap">
 					<div class="aside1">
-						<h3>알림</h3>
-						<ul>
-							<li><a href="#">위원회소식</a>
-								<ul>
-									<li><a href="#">위원회소식</a></li>
-									<li><a href="#">공지</a></li>
-									<li><a href="#">공고</a></li>
-									<li><a href="#">채용</a></li>
-								</ul>
-							</li>
-							<li class="active"><a href="#">보도자료</a>
-								<ul>
-									<li><a href="#" class="active">보도자료</a></li>
-									<li><a href="#">해명·안내자료</a></li>
-									<li><a href="#">팩트체크</a></li>
-									<li><a href="#">e-선거정보</a></li>
-								</ul>
-							</li>
-							<li><a href="#">기사·영상</a>
-								<ul>
-									<li><a href="#">언론기사</a></li>
-									<li><a href="#">언론영상</a></li>
-								</ul>
-							</li>
-							<li><a href="#">스토리 텔링</a>
-								<ul>
-									<li><a href="#">스토리텔링</a></li>
-									<li><a href="#">요모조모</a></li>
-								</ul>
-							</li>
-						</ul>
+						<div class="aside1_subj">알림</div>
+						<div class="sidewrap">
+							<div class="sidemenu">
+								<span class="title">위원회소식</span>		
+									<div class="subsidemenu">
+										<ul class="sidecontent cf">		
+											<li><a href="#">위원회소식</a></li>	
+											<li><a href="#">공지</a></li>
+											<li><a href="#">공조</a></li>
+											<li><a href="#">채용</a></li>
+										</ul>
+									</div>
+							</div>
+							<div class="sidemenu">
+								<span class="title">보도자료</span>		
+									<div class="subsidemenu">
+										<ul class="sidecontent cf">		
+											<li><a href="sub7.html">보도자료</a></li>		
+											<li><a href="#">해명·안내자료</a></li>
+											<li><a href="#">팩트체크</a></li>
+											<li><a href="#">e-선거정보</a></li>
+										</ul>
+									</div>
+							</div>
+							<div class="sidemenu">
+								<span class="title">기사·영상</span>
+									<div class="subsidemenu">
+										<ul class="sidecontent cf">		
+											<li><a href="#">언론기사</a></li>		
+											<li><a href="#">언론영상</a></li>
+										</ul>
+									</div>
+							</div>
+							<div class="sidemenu">
+								<span class="title">스토리 텔링</span>		
+									<div class="subsidemenu">
+										<ul class="sidecontent cf">		
+											<li><a href="#">스토리텔링</a></li>		
+											<li><a href="#">요모조모</a></li>		
+										</ul>
+									</div>
+							</div>
+						</div>
 					</div>
 					<div class="aside2">
 						<h3>가장 많이 본 정보</h3>

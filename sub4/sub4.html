@@ -14,17 +14,20 @@
 	<link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon"/>
 	<link rel="icon" href="../images/favicon.ico" type="image/x-icon"/>
 	<script src="../js/jquery-1.9.1.min.js"></script>
-	<script src="js/ajaxboard.js"></script>
 	<script src="../js/guideText.js"></script>
+	<script src="../js/prefixfree.min.js"></script>
+	<script src="../js/html5div.js"></script>
+	<script src="../js/html5shiv.js"></script>
     <script src="../js/script.js"></script>
+    <script src="js/sub4.js"></script>
 	<!--[if lte ie 8]>
 		<link href="css/non-ie9.css"/ rel="stylesheet">
 	 <![endif] -->
 </head>
 <body>
 	<div id="header">
-		<div class="headerWrap">
-			<a href="../index.html"><div class="logo"></div></a>
+		<div class="headerwrap">
+			<a href="../index.php"><div class="logo"></div></a>
 			<div class="search_box">
 				<input type="text" id="search_bar" name="search_bar" class="guideText" value="검색어를 입력하세요"/>
 				<a href="#" class="btn_search_box">
@@ -43,17 +46,17 @@
 		</div>	
 	</div>
 	<div id="nav">
-		<div class="oneInner">
-			<ul class="oneDepth">
+		<div class="one_inner">
+			<ul class="one_depth">
 				<li class="nav_1"><a href="../sub1/sub1.html" tabindex="1" >국민참여소통</a>
-					<div class="twoInner1">
+					<div class="two_inner1">
 						<div class="left_nav_icon1">
 							<div class="icon_1"><img src="../images/bg_gnb_icon1.png" alt=""/></div>
 							<span class="icon_1_span">국민참여소통</span>
 							</div>
-							<div class="twoDepth cf">
+							<div class="two_depth cf">
 								<dl>
-									<div class="line_B">
+									<div class="line_b">
 										<dt><a href="../sub6/sub6.html">질의·신고</a></dt>
 										<dd><a href="../sub1/sub1.html">정치관계법질의</a></dd>
 										<dd><a href="../sub2/sub2.html">정치관계법 위반행위신고</a></dd>
@@ -66,7 +69,7 @@
 									</div>
 								</dl>	
 								<dl>
-									<div class="line_B">
+									<div class="line_b">
 										<dt><a href="../sub5/sub5.html">정보공개청구</a></dt>
 										<dd><a href="../sub2/sub2.html">정보공개제도</a></dd>
 										<dd><a href="../sub4/sub4.html">정보목록</a></dd>
@@ -76,20 +79,20 @@
 									</div>
 								</dl>
 								<dl>
-									<div class="line_B">
+									<div class="line_b">
 										<dt><a href="../sub4/sub4.html">세입·세출 현황</a></dt>
 										<dd><a href="../sub1/sub41.html">세입·세출사업별 설명자료 보기</a></dd>
 										<dd><a href="../sub3/sub3.html">세입·세출 현황 보기</a></dd>
 									</div>
 								</dl>
 								<dl>
-									<div class="line_B">
+									<div class="line_b">
 										<dt><a href="../sub6/sub6.html">공직자윤리위원회</a></dt>
 										<dd><a href="../sub4/sub4.html">취업이력 공시</a></dd>
 									</div>
 								</dl>	
 								<dl>
-									<div class="line_B">
+									<div class="line_b">
 										<dt><a href="../sub3/sub3.html">민주시민교육</a></dt>
 										<dd><a href="../sub6/sub6.html">연수계획</a></dd>
 										<dd><a href="../sub4/sub4.html">월별연수일정</a></dd>
@@ -99,7 +102,7 @@
 									</div>
 								</dl>
 								<dl>
-									<div class="line_B">
+									<div class="line_b">
 										<dt><a href="../sub6/sub6.html">개인정보보유현황</a></dt>
 										<dd><a href="../sub3/sub3.html">개인정보보유현황</a></dd>
 									</div>
@@ -110,14 +113,14 @@
 					<li class="bar">|</li>
 					<!-- <li class="bar">|</li> -->
 					<li class="nav_2"><a href="../sub2/sub2.html" tabindex="2">알림</a>
-						<div class="twoInner2">
+						<div class="two_inner2">
 							<div class="left_nav_icon2">
 								<div class="icon_2"></div>
 								<span class="icon_2_span">알림</span>
 							</div>
-							<div class="twoDepth cf">
+							<div class="two_depth cf">
 								<dl>
-									<div class="line_B">
+									<div class="line_b">
 										<dt><a href="../sub2/sub2.html">위원회소식</a></dt>
 										<dd><a href="../sub2/sub2.html">위원회소식</a></dd>
 										<dd><a href="../sub4/sub4.html">공지</a></dd>
@@ -126,7 +129,7 @@
 									</div>
 								</dl>	
 								<dl>
-									<div class="line_B">
+									<div class="line_b">
 										<dt><a href="../sub4/sub4.html">보도자료</a></dt>
 										<dd><a href="../sub6/sub6.html">보도자료</a></dd>
 										<dd><a href="../sub3/sub3.html">해명·안내자료</a></dd>
@@ -135,14 +138,14 @@
 									</div>
 								</dl>
 								<dl>
-									<div class="line_B">
+									<div class="line_b">
 										<dt><a href="../sub3/sub3.html">기사·영상</a></dt>
 										<dd><a href="../sub2/sub2.html">언론기사</a></dd>
 										<dd><a href="../sub5/sub5.html">언론 영상</a></dd>
 									</div>
 								</dl>
 								<dl>
-									<div class="line_B">
+									<div class="line_b">
 										<dt><a href="../sub4/sub4.html">스토리 텔링</a></dt>
 										<dd><a href="../sub2/sub2.html">스토리 텔링</a></dd>
 										<dd><a href="../sub1/sub1.html">요모조모</a></dd>
@@ -153,14 +156,14 @@
 					</li>
 					<li class="bar">|</li>
 					<li class="nav_3"><a href="../sub3/sub3.html" tabindex="3" >분야별정보</a>
-						<div class="twoInner3">
+						<div class="two_inner3">
 							<div class="left_nav_icon3">
 								<div class="icon_3"></div>
 								<span class="icon_3_span">분야별정보</span>
 							</div>
-							<div class="twoDepth cf">
+							<div class="two_depth cf">
 								<dl>
-									<div class="line_B">
+									<div class="line_b">
 										<dt><a href="../sub2/sub2.html">선거정보</a></dt>
 										<dd><a href="../sub2/sub2.html">선거통계</a></dd>
 										<dd><a href="../sub4/sub4.html">역대선거통계</a></dd>
@@ -175,7 +178,7 @@
 									</div>
 								</dl>	
 								<dl>
-									<div class="line_B">
+									<div class="line_b">
 										<dt><a href="../sub4/sub4.html">재외선거</a></dt>
 										<dd><a href="../sub6/sub46.html">공지</a></dd>
 										<dd><a href="../sub3/sub3.html">보도자료</a></dd>
@@ -185,7 +188,7 @@
 									</div>
 								</dl>
 								<dl>
-									<div class="line_B">
+									<div class="line_b">
 										<dt><a href="../sub3/sub3.html">선거법령정보</a></dt>
 										<dd><a href="../sub2/sub2.html">법령검색</a></dd>
 										<dd><a href="../sub5/sub5.html">질의검색</a></dd>
@@ -193,7 +196,7 @@
 									</div>
 								</dl>
 								<dl>
-									<div class="line_B">
+									<div class="line_b">
 										<dt><a href="../sub4/sub4.html">정책·공약알리미</a></dt>
 										<dd><a href="../sub2/sub2.html">희망공약 제안</a></dd>
 										<dd><a href="../sub1/sub1.html">정책·공약 보기</a></dd>
@@ -201,7 +204,7 @@
 									</div>
 								</dl>
 								<dl>
-									<div class="line_B">
+									<div class="line_b">
 										<dt><a href="../sub5/sub5.html">정당·정치자금</a></dt>
 										<dd><a href="../sub6/sub6.html">정당정보</a></dd>
 										<dd><a href="../sub4/sub4.html">강령·당헌</a></dd>
@@ -213,7 +216,7 @@
 									</div>
 								</dl>
 								<dl>
-									<div class="line_B">
+									<div class="line_b">
 										<dt><a href="../sub6/sub6.html">미래유권자</a></dt>
 										<dd><a href="../sub1/sub1.html">선거관리위원회는?</a></dd>
 										<dd><a href="../sub2/sub2.html">선거아카데미</a></dd>
@@ -223,7 +226,7 @@
 									</div>
 								</dl>
 								<dl>
-									<div class="line_B">
+									<div class="line_b">
 										<dt><a href="../sub4/sub4.html">기타정보</a></dt>
 										<dd><a href="../sub1/sub1.html">선거방송토론</a></dd>
 										<dd><a href="../sub2/sub2.html">선거여론조사</a></dd>
@@ -238,14 +241,14 @@
 					</li>
 					<li class="bar">|</li>
 					<li class="nav_4"><a href="../sub4/sub4.html" tabindex="4" >통합자료실</a>
-						<div class="twoInner4">
+						<div class="two_inner4">
 							<div class="left_nav_icon4">
 								<div class="icon_4"></div>
 								<span class="icon_4_span">통합자료실</span>
 							</div>
-							<div class="twoDepth cf">
+							<div class="two_depth cf">
 							<dl>
-								<div class="line_B">
+								<div class="line_b">
 									<dt><a href="../sub3/sub3.html">선거자료</a></dt>
 									<dd><a href="../sub3/sub3.html">선거·정당·정치자금</a></dd>
 									<dd><a href="../sub1/sub1.html">정치관계법 개정의견</a></dd>
@@ -258,7 +261,7 @@
 								</div>
 							</dl>	
 							<dl>
-								<div class="line_B">
+								<div class="line_b">
 									<dt><a href="../sub2/sub2.html">홍보자료</a></dt>
 									<dd><a href="../sub1/sub1.html">영상</a></dd>
 									<dd><a href="../sub3/sub3.html">이미지</a></dd>
@@ -267,7 +270,7 @@
 								</div>
 							</dl>	
 							<dl>
-								<div class="line_B">
+								<div class="line_b">
 									<dt><a href="../sub3/sub3.html">재외선거홍보자료</a></dt>
 									<dd><a href="../sub2/sub2.html">영상</a></dd>
 									<dd><a href="../sub4/sub4.html">이미지</a></dd>
@@ -275,7 +278,7 @@
 								</div>
 							</dl>
 							<dl>
-								<div class="line_B">
+								<div class="line_b">
 									<dt><a href="../sub4/sub4.html">민주시민교육자요</a></dt>
 									<dd><a href="../sub1/sub1.html">기본콘텐츠</a></dd>
 									<dd><a href="../sub2/sub2.html">맞춤형콘텐츠</a></dd>
@@ -284,7 +287,7 @@
 								</div>
 							</dl>
 							<dl>
-								<div class="line_B">
+								<div class="line_b">
 									<dt><a href="../sub5/sub5.html">선거정보도서관</a></dt>
 									<dd><a href="../sub2/sub2.html">소장자료</a></dd>
 									<dd><a href="../sub1/sub1.html">전자정보자료</a></dd>
@@ -300,14 +303,14 @@
 				</li>
 				<li class="bar">|</li>
 				<li class="nav_5"><a href="../sub5/sub5.html" tabindex="5" >위원회소개</a>
-					<div class="twoInner5">
+					<div class="two_inner5">
 						<div class="left_nav_icon5">
 							<div class="icon_5"></div>
 							<span class="icon_5_span">위원회소개</span>
 						</div>
-						<div class="twoDepth cf">
+						<div class="two_depth cf">
 							<dl>
-								<div class="line_B">
+								<div class="line_b">
 									<dt><a href="../sub4/sub4.html">개요</a></dt>
 									<dd><a href="../sub4/sub4.html">위원장 인사말</a></dd>
 									<dd><a href="../sub3/sub3.html">지위 및 연혁</a></dd>
@@ -317,7 +320,7 @@
 								</div>
 							</dl>	
 							<dl>	
-								<div class="line_B">
+								<div class="line_b">
 									<dt><a href="../sub1/sub1.html">위원장, 상임위원 및 위원</a></dt>
 									<dd><a href="../sub6/sub6.html">위원장소개</a></dd>
 									<dd><a href="../sub3/sub3.html">상임위원소개</a></dd>	
@@ -325,7 +328,7 @@
 								</div>
 							</dl>	
 							<dl>
-								<div class="line_B">
+								<div class="line_b">
 									<dt><a href="../sub3/sub3.html">조직안내</a></dt>
 									<dd><a href="../sub1/sub1.html">조직구성</a></dd>
 									<dd><a href="../sub2/sub2.html">중앙</a></dd>
@@ -337,7 +340,7 @@
 								</div>
 							</dl>
 							<dl>
-								<div class="line_B">
+								<div class="line_b">
 									<dt><a href="../sub4/sub4.html">위원회상징 및 홍보대사</a></dt>
 									<dd><a href="../sub2/sub2.html">CI</a></dd>
 									<dd><a href="../sub1/sub1.html">캐릭터</a></dd>
@@ -345,14 +348,14 @@
 								</div>
 							</dl>
 							<dl>
-								<div class="line_B">
+								<div class="line_b">
 									<dt><a href="../sub5/sub5.html">찾아오시는길</a></dt>
 									<dd><a href="../sub1/sub1.html">과천청사</a></dd>
 									<dd><a href="../sub2/sub2.html">관악청사</a></dd>
 								</div>
 							</dl>
 							<dl>
-								<div class="line_B">
+								<div class="line_b">
 									<dt><a href="../sub6/sub6.html">방문안내</a></dt>
 									<dd><a href="../sub4/sub4.html">방문정보</a></dd>
 									<dd><a href="../sub1/sub1.html">방문신청</a></dd>
@@ -368,57 +371,72 @@
 	</div>
 	<div id="wrapper">
 		<div id="container">
-			<div class="asideWrap">
+			<div class="asidewrap">
 				<div class="aside1">
-					<h3>통합자료실</h3>
-					<ul>
-						<li class="active"><a href="#">선거자료</a>
-							<ul>
-								<li><a href="#">선거·정당·정치자금</a></li>
-								<li><a href="#">정치관계법 개정의견</a></li>
-								<li><a href="#">간행물</a></li>
-								<li><a href="#">연구(외부)자료</a></li>
-								<li><a href="#">선거연구학술지</a></li>
-								<li><a href="#">각종서식</a></li>
-								<li><a href="#">기타자료</a></li>
-								<li><a href="#" class="active">연구과제신청</a></li>
-							</ul>
-						</li>
-						<li><a href="#">홍보자료</a>
-							<ul>
-								<li><a href="#">영상</a></li>
-								<li><a href="#">이미지</a></li>
-								<li><a href="#">웹툰</a></li>
-								<li><a href="#">이슈카드</a></li>
-							</ul>
-						</li>
-						<li><a href="#">재외선거홍보자료</a>
-							<ul>
-								<li><a href="#">영상</a></li>
-								<li><a href="#">이미지</a></li>
-								<li><a href="#">이슈카드</a></li>
-							</ul>
-						</li>
-						<li><a href="#">민주시민교육자료</a>
-							<ul>
-								<li><a href="#">기본콘텐츠</a></li>
-								<li><a href="#">맞춤형콘텐츠</a></li>
-								<li><a href="#">연수프로그램콘텐츠</a></li>
-								<li><a href="#">기타자료</a></li>
-							</ul>
-						</li>
-						<li><a href="#">민주시민교육자료</a>
-							<ul>
-								<li><a href="#">소장자료</a></li>
-								<li><a href="#">전자정보자료</a></li>
-								<li><a href="#">역대 후보자 공보·벽보</a></li>
-								<li><a href="#">e-book</a></li>
-								<li><a href="#">사이버선거역사관</a></li>
-								<li><a href="#">대한민국 선거사</a></li>
-								<li><a href="#">선거체험관</a></li>
-							</ul>
-						</li>
-					</ul>
+					<div class="aside1_subj">통합자료실</div>
+						<div class="sidewrap">
+							<div class="sidemenu">
+								<span class="title">선거자료</span>		
+									<div class="subsidemenu">
+										<ul class="sidecontent cf">		
+											<li><a href="#">선거·정당·정치자금</a></li>	
+											<li><a href="#">정치관계법 개정의견</a></li>
+											<li><a href="#">간행물</a></li>
+											<li><a href="#">연구(외부)자료</a></li>
+											<li><a href="#">선거연구학술지</a></li>
+											<li><a href="#">각종서식</a></li>
+											<li><a href="#">기타자료</a></li>
+											<li><a href="sub4.html">연구과제신청</a></li>
+										</ul>
+									</div>
+							</div>
+							<div class="sidemenu">
+								<span class="title">홍보자료</span>
+									<div class="subsidemenu">
+										<ul class="sidecontent cf">
+											<li><a href="#">영상</a></li>		
+											<li><a href="#">이미지</a></li>
+											<li><a href="#">웹툰</a></li>
+											<li><a href="#">이슈카드</a></li>
+										</ul>
+									</div>
+							</div>
+							<div class="sidemenu">
+								<span class="title">재외선거홍보자료</span>
+									<div class="subsidemenu">
+										<ul class="sidecontent cf">		
+											<li><a href="#">영상</a></li>		
+											<li><a href="#">이미지</a></li>
+											<li><a href="#">이슈카드</a></li>
+										</ul>
+									</div>
+							</div>
+							<div class="sidemenu">
+								<span class="title">민주시민교육자료</span>		
+									<div class="subsidemenu">
+										<ul class="sidecontent cf">		
+											<li><a href="#">기본콘텐츠</a></li>		
+											<li><a href="#">맞춤형콘텐츠</a></li>
+											<li><a href="#">연수프로그램콘텐츠</a></li>
+											<li><a href="#">기타자료</a></li>
+										</ul>
+									</div>
+							</div>
+							<div class="sidemenu">
+								<span class="title">선거정보도서관</span>		
+									<div class="subsidemenu">
+										<ul class="sidecontent cf">		
+											<li><a href="#">소장자료</a></li>		
+											<li><a href="#">전자정보자료</a></li>
+											<li><a href="#">역대 후보자 공보·벽보</a></li>
+											<li><a href="#">e-book</a></li>
+											<li><a href="#">사이버선거역사관</a></li>
+											<li><a href="#">대한민국 선거사</a></li>
+											<li><a href="#">선거체험관</a></li>
+										</ul>
+									</div>
+							</div>
+					</div>
 				</div>
 				<div class="aside2">
 						<h3>가장 많이 본 정보</h3>
@@ -517,7 +535,7 @@
 					<span class="homeIcon"></span>
 					<span class="location">HOME > 통합자료실 > 선거자료 > 연구과제신청 </span>
 					<!-- 오른쪽 좋아요, SNS, 프린트 -->
-					<span class="print_btn" onclick="window.print()"></span>
+					<span class="print_btn"></span>
 					<span class="sns_n"></span>
 					<span class="sns_k"></span>
 					<span class="sns_t"></span>
@@ -566,69 +584,220 @@
 				<div class="bbs_list">
 					<div class="board">
 						<div class="b_title">
+						제 20대, 21대 국회의원 선거 연령별 투표 비교 <span class="right">K *****  | 2021-04-28</span> 
 						</div>
-						<div class="right"> </div> 
+						<div class="content_wrap cf">
+							<div class="c_subject">
+								제 20대, 21대 국회의원 선거 연령별 투표 비교
+							</div>
+							<div class="c_content">
+							
+								총선에 대비하여 국회의원 선거 연령별 투표율 비교자료를 보고 싶습니다.<br/><br/>
+								또한 최종 투표율과 사전투표율의 차이를 확인하여 사전투표를 어떤 연령층이 주로 이용하는지를 알고 싶습니다.
+								<br/>
+							</div>
+						</div>
 					</div>
 					<div class="board">
 						<div class="b_title">
+						제 17, 18, 19, 20대 대선 설문조사 자료 및 데이터를 요청합니다. <span class="right">n *****  | 2021-04-24</span>
 						</div>
-						<div class="right"> </div> 
+						<div class="content_wrap cf">
+							<div class="c_subject">
+								제 17, 18, 19, 20대 대선 설문조사 자료 및 데이터를 요청합니다. 
+							</div>
+							<div class="c_content">
+							
+								20대 대선이 1년 남은 시점에서 선거 준비를 위한 기존 대선과 앞으로 올 대선의 설문조사 자료를 보고 싶습니다.<br/><br/>
+								설문조사에는 후보별 선호도를 주마다 작성한 문서와, 후보 불출마 선언 이후 발생한 선호도 변화를 중점적으로 다루어 주셨으면 좋겠습니다.
+								<br/>
+							</div>
+						</div>
 					</div>
 					<div class="board">
 						<div class="b_title">
+						21대 총선에서 청소년에 관한 선거자료를 요청합니다. <span class="right">n****  | 2021-04-24</span></div>
+						<div class="content_wrap cf">
+							<div class="c_subject">
+								21대 총선에서 청소년에 관한 선거자료를 요청합니다.
+							</div>
+							<div class="c_content">
+								
+								21대 총선은 만 18세 청소년이 포함된 선거였습니다. 청소년이 어떻게 선거에서 영향력을 행사 하였는지 알고 싶습니다.<br/><br/>
+								21대 총선에서 만 18세의 투표율과 지지 후보, 그리고 각 후보들의 청소년에 대한 공약을 알고 싶습니다.
+								<br/>
+							</div>
 						</div>
-						<div class="right"> </div> 
 					</div>
 					<div class="board">
 						<div class="b_title">
+						코로나19 자가격리자 투표방법 제안 <span class="right">n****  | 2021-04-24</span>
 						</div>
-						<div class="right"> </div> 
+						<div class="content_wrap cf">
+							<div class="c_subject">
+								코로나19 자가격리자 투표방법 제안
+							</div>
+							<div class="c_content">
+								코로나19로 인해 자가격리된 자가격리자들의 투표권 행사를 위한 투표방식을 제안하려고 합니다.<br/><br/>
+								해외에서는 근 5년간 여러번 시행하고 있는 블록체인을 활용한 전자투표 시스템을 제안하고 싶습니다.<br/><br/>
+								블록체인 기반의 전자투표시스템으로 투표 과정을 전부 암호화하고, 각각의 투표자들의 정보를 블록체인의 키방식으로 검증할 수 있다면, <br/><br/>
+								문제는 없을 것이라 생각합니다. 이미 이런 방식으로 유럽에서는 몇번의 선거를 실시 하였습니다.<br/><br/>
+								그렇기에 블록체인 기반의 전자투표시스템을 제안합니다.
+								<br/>
+							</div>
+						</div>
 					</div>
 					<div class="board">
 						<div class="b_title">
+						후보자 부패가 선거에 미치는 영향에 관한 연구 <span class="right">n****  | 2021-04-04</span>
 						</div>
-						<div class="right"> </div> 
+						<div class="content_wrap cf">
+							<div class="c_subject">
+								후보자 부패가 선거에 미치는 영향에 관한 연구
+							</div>
+							<div class="c_content">
+								선거 전후로 후보자에 대한 비판과 네거티브가 속출하고 있습니다.
+								<br/><br/>
+								이러한 후보자에 대한 비판과 네거티브가 후보자의 지지율과 정당의 지지율을 실제로 낮추는 효과가 있는지 확인하고 싶습니다.
+								<br/><br/>
+								또한 단순한 지지율의 높낮이보다는 어떠한 부패, 부정이 더 악영향을 미쳤는지를 자세하게 분석 하고 싶습니다.
+								<br/><br/>
+								역대 선거 여론조사 기간 중 네거티브성 발언이 터지고 난 이후의 지지율 변화를 유추하고, 설문조사를 통해 이를 보충하고 싶습니다.
+								<br/><br/>
+								설문조사에는 네거티브 발언 전후로 후보자의 지지에 대해 묻고, 지지하지 않게 되었다면 어떤 이유로 그랬는지 확인해야 하며,
+								<br/><br/>
+								이러한 설문조사를 바탕으로 오차를 줄여나가 어떤 부패, 부정이 
+								시민들에게 제일 비난을 받는지도 알고 싶습니다.
+								<br/>
+							</div>
+						</div>
 					</div>
 					<div class="board">
 						<div class="b_title">
+						후보자 부패가 선거에 미치는 영향에 관한 연구 <span class="right">n****  | 2021-04-04</span>
 						</div>
-						<div class="right"> </div> 
+						<div class="content_wrap cf">
+							<div class="c_subject">
+								후보자 부패가 선거에 미치는 영향에 관한 연구
+							</div>
+							<div class="c_content">
+								선거 전후로 후보자에 대한 비판과 네거티브가 속출하고 있습니다.
+								<br/><br/>
+								이러한 후보자에 대한 비판과 네거티브가 후보자의 지지율과 정당의 지지율을 실제로 낮추는 효과가 있는지 확인하고 싶습니다.
+								<br/><br/>
+								또한 단순한 지지율의 높낮이보다는 어떠한 부패, 부정이 더 악영향을 미쳤는지를 자세하게 분석 하고 싶습니다.
+								<br/><br/>
+								역대 선거 여론조사 기간 중 네거티브성 발언이 터지고 난 이후의 지지율 변화를 유추하고, 설문조사를 통해 이를 보충하고 싶습니다.
+								<br/><br/>
+								설문조사에는 네거티브 발언 전후로 후보자의 지지에 대해 묻고, 지지하지 않게 되었다면 어떤 이유로 그랬는지 확인해야 하며,
+								<br/><br/>
+								이러한 설문조사를 바탕으로 오차를 줄여나가 어떤 부패, 부정이 
+								시민들에게 제일 비난을 받는지도 알고 싶습니다.
+								<br/>
+							</div>
+						</div>
 					</div>
 					<div class="board">
 						<div class="b_title">
+						후보자 부패가 선거에 미치는 영향에 관한 연구 <span class="right">n****  | 2021-04-04</span>
 						</div>
-						<div class="right"> </div> 
+						<div class="content_wrap cf">
+							<div class="c_subject">
+								후보자 부패가 선거에 미치는 영향에 관한 연구
+							</div>
+							<div class="c_content">
+								선거 전후로 후보자에 대한 비판과 네거티브가 속출하고 있습니다.
+								<br/><br/>
+								이러한 후보자에 대한 비판과 네거티브가 후보자의 지지율과 정당의 지지율을 실제로 낮추는 효과가 있는지 확인하고 싶습니다.
+								<br/><br/>
+								또한 단순한 지지율의 높낮이보다는 어떠한 부패, 부정이 더 악영향을 미쳤는지를 자세하게 분석 하고 싶습니다.
+								<br/><br/>
+								역대 선거 여론조사 기간 중 네거티브성 발언이 터지고 난 이후의 지지율 변화를 유추하고, 설문조사를 통해 이를 보충하고 싶습니다.
+								<br/><br/>
+								설문조사에는 네거티브 발언 전후로 후보자의 지지에 대해 묻고, 지지하지 않게 되었다면 어떤 이유로 그랬는지 확인해야 하며,
+								<br/><br/>
+								이러한 설문조사를 바탕으로 오차를 줄여나가 어떤 부패, 부정이 
+								시민들에게 제일 비난을 받는지도 알고 싶습니다.
+								<br/>
+							</div>
+						</div>
 					</div>
 					<div class="board">
 						<div class="b_title">
+						후보자 부패가 선거에 미치는 영향에 관한 연구 <span class="right">n****  | 2021-04-04</span>
 						</div>
-						<div class="right"> </div> 
+						<div class="content_wrap cf">
+							<div class="c_subject">
+								후보자 부패가 선거에 미치는 영향에 관한 연구
+							</div>
+							<div class="c_content">
+								선거 전후로 후보자에 대한 비판과 네거티브가 속출하고 있습니다.
+								<br/><br/>
+								이러한 후보자에 대한 비판과 네거티브가 후보자의 지지율과 정당의 지지율을 실제로 낮추는 효과가 있는지 확인하고 싶습니다.
+								<br/><br/>
+								또한 단순한 지지율의 높낮이보다는 어떠한 부패, 부정이 더 악영향을 미쳤는지를 자세하게 분석 하고 싶습니다.
+								<br/><br/>
+								역대 선거 여론조사 기간 중 네거티브성 발언이 터지고 난 이후의 지지율 변화를 유추하고, 설문조사를 통해 이를 보충하고 싶습니다.
+								<br/><br/>
+								설문조사에는 네거티브 발언 전후로 후보자의 지지에 대해 묻고, 지지하지 않게 되었다면 어떤 이유로 그랬는지 확인해야 하며,
+								<br/><br/>
+								이러한 설문조사를 바탕으로 오차를 줄여나가 어떤 부패, 부정이 
+								시민들에게 제일 비난을 받는지도 알고 싶습니다.
+								<br/>
+							</div>
+						</div>
 					</div>
 					<div class="board">
 						<div class="b_title">
+						후보자 부패가 선거에 미치는 영향에 관한 연구 <span class="right">n****  | 2021-04-04</span>
 						</div>
-						<div class="right"> </div> 
+						<div class="content_wrap cf">
+							<div class="c_subject">
+								후보자 부패가 선거에 미치는 영향에 관한 연구
+							</div>
+							<div class="c_content">
+								선거 전후로 후보자에 대한 비판과 네거티브가 속출하고 있습니다.
+								<br/><br/>
+								이러한 후보자에 대한 비판과 네거티브가 후보자의 지지율과 정당의 지지율을 실제로 낮추는 효과가 있는지 확인하고 싶습니다.
+								<br/><br/>
+								또한 단순한 지지율의 높낮이보다는 어떠한 부패, 부정이 더 악영향을 미쳤는지를 자세하게 분석 하고 싶습니다.
+								<br/><br/>
+								역대 선거 여론조사 기간 중 네거티브성 발언이 터지고 난 이후의 지지율 변화를 유추하고, 설문조사를 통해 이를 보충하고 싶습니다.
+								<br/><br/>
+								설문조사에는 네거티브 발언 전후로 후보자의 지지에 대해 묻고, 지지하지 않게 되었다면 어떤 이유로 그랬는지 확인해야 하며,
+								<br/><br/>
+								이러한 설문조사를 바탕으로 오차를 줄여나가 어떤 부패, 부정이 
+								시민들에게 제일 비난을 받는지도 알고 싶습니다.
+								<br/>
+							</div>
+						</div>
 					</div>
 					<div class="board">
 						<div class="b_title">
+						후보자 부패가 선거에 미치는 영향에 관한 연구 <span class="right">n****  | 2021-04-04</span>
 						</div>
-						<div class="right"> </div> 
-					</div>
-					<div class="board">
-						<div class="b_title">
+						<div class="content_wrap cf">
+							<div class="c_subject">
+								후보자 부패가 선거에 미치는 영향에 관한 연구
+							</div>
+							<div class="c_content">
+								선거 전후로 후보자에 대한 비판과 네거티브가 속출하고 있습니다.
+								<br/><br/>
+								이러한 후보자에 대한 비판과 네거티브가 후보자의 지지율과 정당의 지지율을 실제로 낮추는 효과가 있는지 확인하고 싶습니다.
+								<br/><br/>
+								또한 단순한 지지율의 높낮이보다는 어떠한 부패, 부정이 더 악영향을 미쳤는지를 자세하게 분석 하고 싶습니다.
+								<br/><br/>
+								역대 선거 여론조사 기간 중 네거티브성 발언이 터지고 난 이후의 지지율 변화를 유추하고, 설문조사를 통해 이를 보충하고 싶습니다.
+								<br/><br/>
+								설문조사에는 네거티브 발언 전후로 후보자의 지지에 대해 묻고, 지지하지 않게 되었다면 어떤 이유로 그랬는지 확인해야 하며,
+								<br/><br/>
+								이러한 설문조사를 바탕으로 오차를 줄여나가 어떤 부패, 부정이 
+								시민들에게 제일 비난을 받는지도 알고 싶습니다.
+								<br/>
+							</div>
 						</div>
-						<div class="right"> </div> 
 					</div>
-					<div class="board">
-						<div class="b_title">
-						</div>
-						<div class="right"> </div> 
-					</div>
-					<div class="board">
-						<div class="b_title">
-						</div>
-						<div class="right"> </div> 
-					</div>
+					
 				</div>
 				<div class="bbs_write">
 					<span class="btn_write"><a href="#">작성하기</a></span>
