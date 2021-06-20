@@ -274,6 +274,14 @@ function check_input()
 						</form>
 					</div>
 				</div>
+				<h4>소셜계정으로 회원 가입</h4>
+				<div class="sns_signup">
+					<a href="http://bluestarim92.dothome.co.kr/project03/index2.php"><img src="images/signup_naver.png"></a>
+					<a href="http://bluestarim92.dothome.co.kr/project03/index2.php"><img src="images/signup_kakao.png"></a>
+					<a href="http://bluestarim92.dothome.co.kr/project03/index2.php"><img src="images/signup_google.png"></a>
+					<a href="http://bluestarim92.dothome.co.kr/project03/index2.php"><img src="images/signup_facebook.png"></a>
+					<a href="http://bluestarim92.dothome.co.kr/project03/index2.php"><img src="images/signup_twitter.png"></a>
+				</div>
 			</div>
 		</div>
 	</div>
