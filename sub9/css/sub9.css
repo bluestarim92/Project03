@@ -61,8 +61,8 @@ a{color: #666666;}
 	.sign_upbox .join_box .col2 input{display:  block; border:  none; border-bottom:  2px solid #cccccc; width:  450px;  font-size:  16px; font-weight: bold;}
 	.sign_upbox .join_box .col2.email input{float:  left;display:  block; border:  none; border-bottom:  2px solid #cccccc; width:  219px;}
 	.sign_upbox .join_box .col2.email span{float:  left;}
-	.sign_upbox .join_box .btn_check{position: absolute; left: 908px; top:  332px;}
-	.sign_upbox .join_box .buttons{position: absolute; left: 1170px; top:  650px;}
+	.sign_upbox .join_box .btn_check{position: absolute; left: 725px; top:  336px;}
+	.sign_upbox .join_box .buttons{position: absolute; left: 1000px; top:  650px;}
 	
 
 

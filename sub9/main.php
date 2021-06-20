@@ -229,7 +229,7 @@ function check_input()
 									<input type="text" name="id">
 								</div>
 								<div class="btn_check">
-									<a href="#"><img src="./images/check_id.gif" 
+									<a href="#"><img src="./images/check_id.png"  height="22px"
 										onclick="check_id()"></a>
 								</div>
 							</div>
@@ -267,8 +267,8 @@ function check_input()
 							</div>
 							<div class="clear"></div>
 							<div class="buttons">
-								<img style="cursor:pointer" src="./images/button_save.gif" onclick="check_input()">&nbsp;
-								<img id="reset_button" style="cursor:pointer" src="./images/button_reset.gif"
+								<img style="cursor:pointer" src="./images/btn_save.png" height="22px" onclick="check_input()">&nbsp;
+								<img id="reset_button" style="cursor:pointer" height="22px" src="./images/btn_cancle.png"
 									onclick="reset_form()">
 							</div>
 						</form>
