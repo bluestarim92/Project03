@@ -61,20 +61,9 @@ a{color: #666666;}
 	.sign_upbox .join_box .col2 input{display:  block; border:  none; border-bottom:  2px solid #cccccc; width:  450px;  font-size:  16px; font-weight: bold;}
 	.sign_upbox .join_box .col2.email input{float:  left;display:  block; border:  none; border-bottom:  2px solid #cccccc; width:  219px;}
 	.sign_upbox .join_box .col2.email span{float:  left;}
-<<<<<<< HEAD
-	.sign_upbox .join_box .btn_check{position: absolute; left: 908px; top:  332px;}
-	.sign_upbox .join_box .buttons{position: absolute; left: 1170px; top:  650px;}
-=======
+
 	.sign_upbox .join_box .btn_check{position: absolute; left: 725px; top:  336px;}
 	.sign_upbox .join_box .buttons{position: absolute; left: 1000px; top:  650px;}
-
-
-	.sns_signup{float: left; width: 880px; padding: 13px 26px; height: 150px; border: 1px solid #999999; border-top: 2px solid #333333; margin-left: 54px;}
-	.sns_signup a{float:  left; padding-right:  43px; margin-top:  15px}
-	.sns_signup a:nth-child(3){padding-right:  0px;}
-
-
->>>>>>> 4c57ecaa560babdae6721bd0c4e506d3281f658a
 
 	.sns_signup{float: left; width: 880px; padding: 13px 26px; height: 150px; border: 1px solid #999999; border-top: 2px solid #333333; margin-left: 54px;}
 	.sns_signup a{float:  left; padding-right:  43px; margin-top:  15px}
