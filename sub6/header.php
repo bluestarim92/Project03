@@ -1,5 +1,5 @@
 <?php
-	define('DBuser', 'user1');
+	define('DBuser', 'bluestarim92');
 	define('DBpass', 'ay2111!!');
 	define('DBname', 'bluestarim92');
 
@@ -31,10 +31,10 @@
 				<li class="gnb_icon2"><a href="login_form.php">로그인</a></li>
 <?php 	
 	} else {
-		$logged = $username."(".$userid.")님[Level:".$userlevel1.", Point:".$userpoint."]";
+		$logged = $username."(".$userid.")님[Level:".$userlevel.", Point:".$userpoint."]";
 ?>
-				<li class="gnb_icon1"><a href="member_modify_form.php">정보수정</a></li>
-				<li class="gnb_icon2"><a href="logout.php">로그아웃</a></li>
+				<li class="gnb_icon1"><a href="./sub9/member_modify_form.php">정보수정</a></li>
+				<li class="gnb_icon2"><a href="./logout.php">로그아웃</a></li>
 <?php
 	}
 ?>

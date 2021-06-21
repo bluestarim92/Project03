@@ -21,6 +21,7 @@
 	<script src="../js/guideText.js"></script>
     <script src="../js/script.js"></script>
     <script src="js/sub6.js"></script>
+    <script src="js/login.js"></script>
 	<!--[if lte ie 8]>
 		<link href="css/non-ie9.css"/ rel="stylesheet">
 	 <![endif] -->

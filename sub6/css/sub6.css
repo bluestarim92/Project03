@@ -58,10 +58,10 @@ a{color: #666666;}
 	.article1 > ul > li{float:left; margin-top: 5px; background: url(../../images/bu_pink.gif) no-repeat left 8px; padding-left: 10px; font-weight: normal;}
 	.article1 > ul li.authBox{float: left; background: #ffffff; width: 880px; padding: 13px 26px; height: 150px; border: 1px solid #999999; border-top: 2px solid #333333;}
 	.article1 > ul > li > .mark_p{color: #ed63ac; font-weight: bold;}
-	.article1 >  .loginBox > .log_box > p.ex{margin-bottom: 15px; font-weight: normal;  width: 350px;}
+	.ex{margin-bottom: 15px; font-weight: normal;  width: 350px;}
 	.article1 > .loginBox > .log_box > p.log > span{display:block;}
-	.article1 > .loginBox > .log_box > p.log > span > .log_ctrl{float: left; display: block; width: 79%; background: #dddddd; border: 1px solid #aaaaaa; height: 34px; min-height: 34px; margin-bottom: 5px; margin-right: 10px; padding-left: 10px;}
-	.article1 > .loginBox > .log_box > p.log> span > .btn_log{font-size: 1.2em; background: #008d96; width: 93px; height: 77px; cursor: pointer; color: #ffffff; display: block; border-radius: 3px;}
+	.log_ctrl{float: left; display: block; width: 79%; background: #dddddd; border: 1px solid #aaaaaa; height: 34px; min-height: 34px; margin-bottom: 5px; margin-right: 10px; padding-left: 10px;}
+	.btn_log{font-size: 1.2em; background: #008d96; width: 93px; height: 77px; cursor: pointer; color: #ffffff; display: block; border-radius: 3px;}
 	.article1 > .loginBox > .log_box > .find_sign_up>ul{float: left; margin-top: 5px; margin-left: 124px;}
 	.article1 > .loginBox > .log_box > .find_sign_up>ul>li{float: left;}
 	.article1 > .loginBox > .log_box > .find_sign_up>ul>li.txt_li{background: url(../../images/bu_arr.png) no-repeat right 4px; padding-right: 20px; font-weight: normal;}

@@ -61,7 +61,7 @@
 				cnt--;
 				if(cnt < 0) {
 					clearInterval(tid);
-					self.location = "sub6/login_form.php";
+					self.location = "sub9/member_form.php";
 				}
 			};
 			function time_format(s) {

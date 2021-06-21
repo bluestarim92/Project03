@@ -1,70 +1,53 @@
-<script>
-function check_input()
-	{
-		if(!document.member_form.id.value) {
-			alert("아이디를 입력하세요!");
-			document.member_form.id.focus();
-			return;
-		}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="Generator" content="Notepad++"/>
+	<meta name="Author" content="임현진"/>
+	<meta name="Keywords" content="포트폴리오, Portfolio, 임현진의 포트폴리오, Hyeonjin's Portfolio"/>
+	<meta name="Description" content="임현진의 포트폴리오를 소개합니다."/>
+	<title>PHP Project</title>
+	<link rel="stylesheet" href="css/common_style.css"/>
+	<link rel="stylesheet" href="css/sub9.css"/>
+	<link rel="stylesheet" href="css/common_style2.css"/>
+	<script src="../js/jquery-1.9.1.min.js"></script>
+	<link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon"/>
+	<link rel="icon" href="../images/favicon.ico" type="image/x-icon"/>
+	<script src="../js/jquery-1.9.1.min.js"></script>
+	<script src="../js/prefixfree.min.js"></script>
+	<script src="../js/html5div.js"></script>
+	<script src="../js/html5shiv.js"></script>
+	<script src="../js/guideText.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="js/sub6.js"></script>
+    <script src="js/member_modify.js"></script>
+	<!--[if lte ie 8]>
+		<link href="css/non-ie9.css"/ rel="stylesheet">
+	 <![endif] -->
+	
+</head>
+<body>
+	<header>
+		<?php include "header.php";?>
+	</header>
+<?php
+	$con = mysqli_connect('localhost', DBuser, DBpass, DBname);
+	$sql = "select * from members where id='$userid'";
+	$result = mysqli_query($con, $sql);
+	$row = mysqli_fetch_array($result);
 
-		if(!document.member_form.pass.value) {
-			alert("비밀번호를 입력하세요!");
-			document.member_form.pass.focus();
-			return;
-		}
+	$pass = $row['pass'];
+	$name = $row['name'];
 
-		if(!document.member_form.pass_confirm.value) {
-			alert("비밀번호확인을 입력하세요!");
-			document.member_form.pass_confirm.focus();
-			return;
-		}
+	$email = explode("@", $row["email"]);
+	$email1 = $email[0];
+	$email2 = $email[1];
 
-		if(!document.member_form.name.value) {
-			alert("이름을 입력하세요!");
-			document.member_form.name.focus();
-			return;
-		}
-
-		if(!document.member_form.email1.value) {
-			alert("이메일 주소를 입력하세요!");
-			document.member_form.email1.focus();
-			return;
-		}
-
-		if(!document.member_form.email2.value) {
-			alert("이메일 주소를 입력하세요!");
-			document.member_form.email2.focus();
-			return;
-		}
-
-		if(document.member_form.pass.value !=
-			 document.member_form.pass_confirm.value) {
-			alert("비밀번호가 일치하지 않습니다. \n다시 입력해 주세요!");
-			document.member_form.pass.focus();
-			document.member_form.pass.select();
-			return;
-		}
-
-		document.member_form.submit();
-	}
-
-	function reset_form() {
-		document.member_form.id.value = "";
-		document.member_form.pass.value = "";
-		document.member_form.pass_confirm.value = "";
-		document.member_form.name.value = "";
-		document.member_form.email1.value = "";
-		document.member_form.email2.value = "";
-		document.member_form.id.focus();
-	}
-
-	function check_id() {
-		window.open("member_check_id.php?id=" + document.member_form.id.value,
-			"IDcheck",
-			"left=700, top=300, width=350, height=200, scrollbars=no, resizable=yes");
-	} 
-</script>
-<div id="wrapper">
+	mysqli_close($con);
+?>
+	<section>
+		<div id="wrapper">
 		<div id="container">
 			<div class="asidewrap">
 				<div class="aside1">
@@ -107,8 +90,8 @@ function check_input()
 										<ul class="sidecontent cf">		
 											<li><a href="#">로그인</a></li>		
 											<li><a href="#">아이디찾기</a></li>
-											<li><a href="#">비밀번호 재설정</a></li>
-											<li><a href="member_form.php">회원가입</a></li>
+											<li><a href="member_modify_form.php">정보수정</a></li>
+											<li><a href="#">회원가입</a></li>
 										</ul>
 									</div>
 							</div>
@@ -209,7 +192,7 @@ function check_input()
 				<div class="menulog">
 					<!-- 왼쪽 메뉴 -->
 					<span class="homeicon"></span>
-					<span class="location">HOME > 홈페이지도우미 > 회원정보 > 회원가입 </span>
+					<span class="location">HOME > 홈페이지도우미 > 회원정보 > 정보수정 </span>
 					<!-- 오른쪽 좋아요, SNS, 프린트 -->
 					<span class="print_btn"></span>
 					<span class="sns_n"></span>
@@ -218,71 +201,55 @@ function check_input()
 					<span class="sns_f"></span>
 					<span class="like_btn"></span>
 				</div>
-				<h4>회원가입</h4>
+				<h4>회원 정보 수정</h4>
 				<div class="sign_upbox">
 					<div class="join_box">
-						<form name="member_form" method="post" action="member_insert.php">
-							<h3>회원가입을 위해 정보를 입력해 주세요.</h3>
+						<form name="member_form" method="post" action="member_modify.php?id=<?=$userid?>">
+							<h3>수정해야할 정보를 입력해주세요</h3>
 							<div class="form id">
 								<div class="col1">아이디</div>
 								<div class="col2">
-									<input type="text" name="id">
-								</div>
-								<div class="btn_check">
-									<a href="#"><img src="images/check_id.png" 
-										onclick="check_id()"></a>
+									<?=$userid?>
 								</div>
 							</div>
-							<div class="clear"></div>
-
 							<div class="form">
-								<div class="col1">비밀번호</div>
+								<div class="col1 pwd">비밀번호</div>
 								<div class="col2">
-									<input type="password" name="pass">
+									<input type="password" name="pass" value="<?=$pass?>">
 								</div>
 							</div>
-							<div class="clear"></div>
-
 							<div class="form">
 								<div class="col1">비밀번호확인</div>
 								<div class="col2">
-									<input type="password" name="pass_confirm">
+									<input type="password" name="pass_confirm" value="<?=$pass?>">
 								</div>
 							</div>
-							<div class="clear"></div>
-
 							<div class="form">
 								<div class="col1">이름</div>
 								<div class="col2">
-									<input type="text" name="name">
+									<input type="text" name="name" value="<?=$name?>">
 								</div>
 							</div>
-							<div class="clear"></div>
-
 							<div class="form email">
 								<div class="col1">이메일</div>
 								<div class="col2 email">
-									<input type="text" name="email1"><span>@</span><input type="text" name="email2">
+									<input type="text" name="email1" value="<?=$email1?>"><span>@</span><input type="text" name="email2" value="<?=$email2?>">
 								</div>
 							</div>
-							<div class="clear"></div>
 							<div class="buttons">
-								<img style="cursor:pointer" src="images/btn_save.png" onclick="check_input()">&nbsp;
-								<img id="reset_button" style="cursor:pointer" src="images/btn_cancle.png"
+								<img style="cursor:pointer" src="./images/button_save.gif" onclick="check_input()">&nbsp;
+								<img id="reset_button" style="cursor:pointer" src="./images/button_reset.gif"
 									onclick="reset_form()">
 							</div>
 						</form>
 					</div>
 				</div>
-				<h4>SNS 회원 가입</h4>
-				<div class="sns_signup">
-					<a href="../index2.php"><img src="images/signup_naver.png" alt="SNS가입1"></a>
-					<a href="../index2.php"><img src="images/signup_kakao.png" alt="SNS가입2"></a>
-					<a href="../index2.php"><img src="images/signup_google.png" alt="SNS가입3"></a>
-					<a href="../index2.php"><img src="images/signup_facebook.png" alt="SNS가입4"></a>
-					<a href="../index2.php"><img src="images/signup_twitter.png" alt="SNS가입5"></a>
-					<a href="../index2.php"><img src="images/signup_apple.png" alt="SNS가입6" width="264"></a>
-				</div>
 			</div>
 		</div>
 	</div>
+	</section>
+	<footer>
+		<?php include "footer.php";?>
+	</footer>
+</body>
+</html>

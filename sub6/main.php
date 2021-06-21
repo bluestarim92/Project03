@@ -155,22 +155,24 @@
 				<h4>회원로그인</h4>
 				<div class="loginBox">
 					<div class="log_box">
-						<p class="ex">회원님의 아이디 / 비밀번호를 입력해 주십시오.</p>
-						<p class="log">
-							<span>
-								<input id="cuId" name="cuId" type="text" class="log_ctrl guideText" value="아이디" title="아이디" />
-							</span>
-						</p>
-						<p class="log">
-							<span>
-								<input id="cuPwd" name="cuPwd" type="password" class="log_ctrl guideText" value="패스워드" title="패스워드" autocomplete="off" maxlength="30"/>
-							</span>
-						</p>
-						<p class="log">
-							<span>
-								<input class="btn_log" type="button" value="로그인"/>
-							</span>
-						</p>
+						<form name="login_form" method="post" action="login.php">
+							<p class="ex">회원님의 아이디 / 비밀번호를 입력해 주십시오.</p>
+							<p class="log">
+								<span>
+									<input name="id" type="text" class="log_ctrl guideText" value="아이디" title="아이디" />
+								</span>
+							</p>
+							<p class="log">
+								<span>
+									<input name="pass" type="password" class="log_ctrl guideText" value="패스워드" title="패스워드" autocomplete="off" maxlength="30"/>
+								</span>
+							</p>
+							<p class="log">
+								<span>
+									<input class="btn_log" type="button" value="로그인" style="cursor: pointer;" onclick="check_input()" />
+								</span>
+							</p>
+						</form>
 						<div class="find_sign_up">
 							<ul>
 								<li class="txt_li"><a href="#">아이디찾기</a></li>

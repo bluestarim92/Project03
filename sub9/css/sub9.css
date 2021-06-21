@@ -63,10 +63,11 @@ a{color: #666666;}
 	.sign_upbox .join_box .col2.email span{float:  left;}
 	.sign_upbox .join_box .btn_check{position: absolute; left: 908px; top:  332px;}
 	.sign_upbox .join_box .buttons{position: absolute; left: 1170px; top:  650px;}
-	
 
-
-
+	.sns_signup{float: left; width: 880px; padding: 13px 26px; height: 150px; border: 1px solid #999999; border-top: 2px solid #333333; margin-left: 54px;}
+	.sns_signup a{float:  left; padding-right:  43px; margin-top:  15px}
+	.sns_signup a:nth-child(3){padding-right:  0px;}
+	.sns_signup a:nth-child(6){padding-right:  0px;}
 
 	.article1 > ul{float:left; width: 934px; margin-left: 54px;}
 	.article1 > ul > li{float:left; margin-top: 5px; background: url(../../images/bu_pink.gif) no-repeat left 8px; padding-left: 10px; font-weight: normal;}
@@ -90,7 +91,8 @@ a{color: #666666;}
 	.article1 > ul > li.authBox>ul>li.auth_box > .inner_box > p.tab_naver_auth{display: block; width: 90%; padding: 10px; border: 0; font-size: 1.15em; margin-left: 5px; text-align: center; margin-bottom: 10px; background: #2db400 url(../../images/bg_logItem2_2.gif) no-repeat;}
 	.article1 > ul > li.authBox>ul>li.auth_box > .inner_box > p.tab_naver_auth > a{color: #ffffff;}
 	
-	
+	.id{margin-bottom:  70px;}
+	.pwd{position:  absolute; left:  614px; top:  360px;}
 	
 	
 	
