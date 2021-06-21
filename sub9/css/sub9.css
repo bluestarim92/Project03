@@ -40,7 +40,7 @@ a{color: #666666;}
 		.aside3 h3{font-size: 22px; text-align: center; margin-bottom: 15px;}
 		.aside3 ul li{display: block; height: 38px; background: #e2e4e9 url(../../images/bullet.png) no-repeat 8px 20px; padding-left: 15px; margin-bottom: 5px; line-height: 40px; font-weight: normal;}
 		.aside3 ul li a:hover{text-decoration: underline;}
-	.article1{display: block; float:right; width: 1044px; height: 820px; margin-right: 32px; margin-top: 38px; background: #ffffff;}
+	.article1{display: block; float:right; width: 1044px; height: 785px; margin-right: 32px; margin-top: 38px; background: #ffffff;}
 	.menulog{display:block; width: 990px; height: 25px; border-bottom: 2px solid #444444; margin: 0 auto; padding-top: 20px; margin-bottom: 20px;}
 			.homeicon{display: block; width: 24px; height: 24px;  float:left; background:url(../../images/bu_home.gif)  no-repeat center left; cursor: pointer;}
 				.location{font-size:0.8em; color: #666666;}
@@ -61,35 +61,27 @@ a{color: #666666;}
 	.sign_upbox .join_box .col2 input{display:  block; border:  none; border-bottom:  2px solid #cccccc; width:  450px;  font-size:  16px; font-weight: bold;}
 	.sign_upbox .join_box .col2.email input{float:  left;display:  block; border:  none; border-bottom:  2px solid #cccccc; width:  219px;}
 	.sign_upbox .join_box .col2.email span{float:  left;}
+<<<<<<< HEAD
 	.sign_upbox .join_box .btn_check{position: absolute; left: 908px; top:  332px;}
 	.sign_upbox .join_box .buttons{position: absolute; left: 1170px; top:  650px;}
+=======
+	.sign_upbox .join_box .btn_check{position: absolute; left: 725px; top:  336px;}
+	.sign_upbox .join_box .buttons{position: absolute; left: 1000px; top:  650px;}
+
+
+	.sns_signup{float: left; width: 880px; padding: 13px 26px; height: 150px; border: 1px solid #999999; border-top: 2px solid #333333; margin-left: 54px;}
+	.sns_signup a{float:  left; padding-right:  43px; margin-top:  15px}
+	.sns_signup a:nth-child(3){padding-right:  0px;}
+
+
+>>>>>>> 4c57ecaa560babdae6721bd0c4e506d3281f658a
 
 	.sns_signup{float: left; width: 880px; padding: 13px 26px; height: 150px; border: 1px solid #999999; border-top: 2px solid #333333; margin-left: 54px;}
 	.sns_signup a{float:  left; padding-right:  43px; margin-top:  15px}
 	.sns_signup a:nth-child(3){padding-right:  0px;}
 	.sns_signup a:nth-child(6){padding-right:  0px;}
 
-	.article1 > ul{float:left; width: 934px; margin-left: 54px;}
-	.article1 > ul > li{float:left; margin-top: 5px; background: url(../../images/bu_pink.gif) no-repeat left 8px; padding-left: 10px; font-weight: normal;}
-	.article1 > ul li.authBox{float: left; background: #ffffff; width: 880px; padding: 13px 26px; height: 150px; border: 1px solid #999999; border-top: 2px solid #333333;}
-	.article1 > ul > li > .mark_p{color: #ed63ac; font-weight: bold;}
-	.article1 >  .loginBox > .log_box > p.ex{margin-bottom: 15px; font-weight: normal;  width: 350px;}
-	.article1 > .loginBox > .log_box > p.log > span{display:block;}
-	.article1 > .loginBox > .log_box > p.log > span > .log_ctrl{float: left; display: block; width: 79%; background: #dddddd; border: 1px solid #aaaaaa; height: 34px; min-height: 34px; margin-bottom: 5px; margin-right: 10px; padding-left: 10px;}
-	.article1 > .loginBox > .log_box > p.log> span > .btn_log{font-size: 1.2em; background: #008d96; width: 93px; height: 77px; cursor: pointer; color: #ffffff; display: block; border-radius: 3px;}
-	.article1 > .loginBox > .log_box > .find_sign_up>ul{float: left; margin-top: 5px; margin-left: 124px;}
-	.article1 > .loginBox > .log_box > .find_sign_up>ul>li{float: left;}
-	.article1 > .loginBox > .log_box > .find_sign_up>ul>li.txt_li{background: url(../../images/bu_arr.png) no-repeat right 4px; padding-right: 20px; font-weight: normal;}
-	.article1 > .loginBox > .log_box > .find_sign_up > ul > li.bar{color: #cccccc; padding: 0 5px; font-size: 1.2em; line-height: 14px;}
-	.article1 > ul > li.authBox>ul>li.auth_box{display: block; float: left; width: 276px; height: 150px; }
-	.article1 > ul > li.authBox>ul>li.bar{display: block; float: left; width: 2px; height: 150px; background: #cccccc; margin: 0 10px;}
-	.article1 > ul > li.authBox>ul>li.auth_box > .inner_box > p.tab_auth{display: block; width: 90%; padding: 10px; border: 0; font-size: 1.15em; font-weight: bold; background: #438de0; margin-left: 5px; text-align: center; margin-bottom: 10px; }
-	.article1 > ul > li.authBox>ul>li.auth_box > .inner_box > p{color: #999999;}
 	
-	.article1 > ul > li.authBox>ul>li.auth_box > .inner_box > p.tab_auth > a{  color: #ffffff;}
-	.article1 > ul > li.authBox>ul>li.auth_box > .inner_box > p.tab_kakao_auth{display: block; width: 90%; padding: 10px; border: 0; font-size: 1.15em; margin-left: 5px; text-align: center; margin-bottom: 10px; background: #fee101 url(../../images/bg_logItem2_1.gif) no-repeat;}
-	.article1 > ul > li.authBox>ul>li.auth_box > .inner_box > p.tab_naver_auth{display: block; width: 90%; padding: 10px; border: 0; font-size: 1.15em; margin-left: 5px; text-align: center; margin-bottom: 10px; background: #2db400 url(../../images/bg_logItem2_2.gif) no-repeat;}
-	.article1 > ul > li.authBox>ul>li.auth_box > .inner_box > p.tab_naver_auth > a{color: #ffffff;}
 	
 	.id{margin-bottom:  70px;}
 	.pwd{position:  absolute; left:  614px; top:  360px;}
