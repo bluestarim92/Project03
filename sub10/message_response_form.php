@@ -9,43 +9,41 @@
 	<meta name="Description" content="임현진의 포트폴리오를 소개합니다."/>
 	<title>PHP Project</title>
 	<link rel="stylesheet" href="css/common_style.css"/>
-	<link rel="stylesheet" href="css/sub9.css"/>
+	<link rel="stylesheet" href="css/sub10.css"/>
 	<link rel="stylesheet" href="css/common_style2.css"/>
 	<script src="../js/jquery-1.9.1.min.js"></script>
 	<link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon"/>
 	<link rel="icon" href="../images/favicon.ico" type="image/x-icon"/>
 	<script src="../js/jquery-1.9.1.min.js"></script>
+	<script src="https://kit.fontawesome.com/82c75915db.js" crossorigin="anonymous"></script>
 	<script src="../js/prefixfree.min.js"></script>
 	<script src="../js/html5div.js"></script>
 	<script src="../js/html5shiv.js"></script>
 	<script src="../js/guideText.js"></script>
     <script src="../js/script.js"></script>
-    <script src="js/sub6.js"></script>
-    <script src="js/member_modify.js"></script>
-	<!--[if lte ie 8]>
-		<link href="css/non-ie9.css"/ rel="stylesheet">
-	 <![endif] -->
-	
+    <script src="js/sub10.js"></script>
+    <script>
+		function check_input(){
+			if(!document.message_form.subject.value)
+			{
+				alert("제목을 입력하세요!");
+				document.message_form.subject.focus();
+				return;
+			}
+			if(!document.message_form.content.value)
+			{
+				alert("내용을 입력하세요");
+				document.message_form.content.focus();
+				return;
+			}
+			document.message_form.submit();
+		}
+	</script>
 </head>
 <body>
 	<header>
 		<?php include "header.php";?>
 	</header>
-<?php
-	$con = mysqli_connect('localhost', DBuser, DBpass, DBname);
-	$sql = "select * from members where id='$userid'";
-	$result = mysqli_query($con, $sql);
-	$row = mysqli_fetch_array($result);
-
-	$pass = $row['pass'];
-	$name = $row['name'];
-
-	$email = explode("@", $row["email"]);
-	$email1 = $email[0];
-	$email2 = $email[1];
-
-	mysqli_close($con);
-?>
 	<section>
 		<div id="wrapper">
 		<div id="container">
@@ -90,8 +88,9 @@
 										<ul class="sidecontent cf">		
 											<li><a href="#">로그인</a></li>		
 											<li><a href="#">아이디찾기</a></li>
-											<li><a href="member_modify_form.php">정보수정</a></li>
+											<li><a href="#">정보수정</a></li>
 											<li><a href="#">회원가입</a></li>
+											<li><a href="message_form.php">쪽지 보내기</a></li>
 										</ul>
 									</div>
 							</div>
@@ -192,7 +191,7 @@
 				<div class="menulog">
 					<!-- 왼쪽 메뉴 -->
 					<span class="homeicon"></span>
-					<span class="location">HOME > 홈페이지도우미 > 회원정보 > 정보수정 </span>
+					<span class="location">HOME > 홈페이지도우미 > 회원정보 > 쪽지 보내기 </span>
 					<!-- 오른쪽 좋아요, SNS, 프린트 -->
 					<span class="print_btn"></span>
 					<span class="sns_n"></span>
@@ -201,57 +200,60 @@
 					<span class="sns_f"></span>
 					<span class="like_btn"></span>
 				</div>
-				<h4>회원 정보 수정</h4>
-				<div class="sign_upbox">
-					<div class="join_box">
-						<form name="member_form" method="post" action="member_modify.php?id=<?=$userid?>">
-							<h3>수정해야할 정보를 입력해주세요</h3>
-							<div class="form id">
-								<div class="col1">아이디</div>
-								<div class="col2">
-									<?=$userid?>
-								</div>
-							</div>
-							<div class="form">
-								<div class="col1 pwd">비밀번호</div>
-								<div class="col2">
-									<input type="password" name="pass" value="<?=$pass?>">
-								</div>
-							</div>
-							<div class="form">
-								<div class="col1">비밀번호확인</div>
-								<div class="col2">
-									<input type="password" name="pass_confirm" value="<?=$pass?>">
-								</div>
-							</div>
-							<div class="form">
-								<div class="col1">이름</div>
-								<div class="col2">
-									<input type="text" name="name" value="<?=$name?>">
-								</div>
-							</div>
-							<div class="form email">
-								<div class="col1">이메일</div>
-								<div class="col2 email">
-									<input type="text" name="email1" value="<?=$email1?>"><span>@</span><input type="text" name="email2" value="<?=$email2?>">
-								</div>
-							</div>
-							<div class="buttons">
-<<<<<<< HEAD
-								<img style="cursor:pointer" src="./images/btn_save.png" onclick="check_input()">&nbsp;
-								<img id="reset_button" style="cursor:pointer" src="./images/btn_cancle.png"
-=======
-								<img style="cursor:pointer" src="./images/button_save.gif" onclick="check_input()">&nbsp;
-								<img id="reset_button" style="cursor:pointer" src="./images/button_reset.gif"
->>>>>>> be237eec3ab25fd2ac2850501993fd097b7aaee1
-									onclick="reset_form()">
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
+		<div id="message_box">
+   		<h3 id="write_title">
+   			답변 쪽지 보내기
+   		</h3>
+<?php
+	$num = $_GET['num'];
+
+	$con = mysqli_connect("localhost", DBuser, DBpass, DBname);
+	$sql = "select * from message where num=$num";
+	$result = mysqli_query($con, $sql);
+
+	$row = mysqli_fetch_array($result);
+	$send_id = $row["send_id"];
+	$rv_id = $row["rv_id"];
+	$subject = $row["subject"];
+	$content = $row["content"];
+
+	$subject = "RE: ".$subject;
+
+	$content = "> ".$content;
+	$content = str_replace("\n", "\n>", $content);
+	$content = "\n\n\n----------------------------------------------------------------\n".$content;
+
+	$result2 = mysqli_query($con, "select name from members where id='$send_id'");
+	$record = mysqli_fetch_array($result2);
+	$send_name = $record["name"];
+?>
+	<form name="message_form" method="post" action="message_insert.php?send_id=<?=$userid?>">
+		<input type="hidden" name="rv_id" value="<?=$send_id?>">
+		<div id="write_msg">
+			<ul>
+				<li>
+					<span class="col1">보내는 사람 : </span>
+					<span class="col2"><?=$userid?></span>
+				</li>
+				<li>
+					<span class="col1">수신 아이디 : </span>
+					<span class="col2"><?=$send_name?>(<?=$send_id?>)</span>
+				</li>
+				<li>
+					<span class="col1">제목 : </span>
+					<span class="col2"><input type="text" name="subject" value="<?=$subject?>"></span>
+				</li>
+				<li id="text_area">
+					<span class="col1">내용 : </span>
+					<span class="col2">
+						<textarea name="content"><?=$content?></textarea>
+					</span>
+				</li>
+			</ul>
+			<button type="button" onclick="check_input()">보내기</button>
 		</div>
-	</div>
+	</form>
+   	</div><!-- message_box -->
 	</section>
 	<footer>
 		<?php include "footer.php";?>

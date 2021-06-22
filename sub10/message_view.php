@@ -9,43 +9,24 @@
 	<meta name="Description" content="임현진의 포트폴리오를 소개합니다."/>
 	<title>PHP Project</title>
 	<link rel="stylesheet" href="css/common_style.css"/>
-	<link rel="stylesheet" href="css/sub9.css"/>
+	<link rel="stylesheet" href="css/sub10.css"/>
 	<link rel="stylesheet" href="css/common_style2.css"/>
 	<script src="../js/jquery-1.9.1.min.js"></script>
 	<link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon"/>
 	<link rel="icon" href="../images/favicon.ico" type="image/x-icon"/>
 	<script src="../js/jquery-1.9.1.min.js"></script>
+	<script src="https://kit.fontawesome.com/82c75915db.js" crossorigin="anonymous"></script>
 	<script src="../js/prefixfree.min.js"></script>
 	<script src="../js/html5div.js"></script>
 	<script src="../js/html5shiv.js"></script>
 	<script src="../js/guideText.js"></script>
     <script src="../js/script.js"></script>
-    <script src="js/sub6.js"></script>
-    <script src="js/member_modify.js"></script>
-	<!--[if lte ie 8]>
-		<link href="css/non-ie9.css"/ rel="stylesheet">
-	 <![endif] -->
-	
+    <script src="js/sub10.js"></script>
 </head>
 <body>
 	<header>
 		<?php include "header.php";?>
 	</header>
-<?php
-	$con = mysqli_connect('localhost', DBuser, DBpass, DBname);
-	$sql = "select * from members where id='$userid'";
-	$result = mysqli_query($con, $sql);
-	$row = mysqli_fetch_array($result);
-
-	$pass = $row['pass'];
-	$name = $row['name'];
-
-	$email = explode("@", $row["email"]);
-	$email1 = $email[0];
-	$email2 = $email[1];
-
-	mysqli_close($con);
-?>
 	<section>
 		<div id="wrapper">
 		<div id="container">
@@ -90,8 +71,9 @@
 										<ul class="sidecontent cf">		
 											<li><a href="#">로그인</a></li>		
 											<li><a href="#">아이디찾기</a></li>
-											<li><a href="member_modify_form.php">정보수정</a></li>
+											<li><a href="#">정보수정</a></li>
 											<li><a href="#">회원가입</a></li>
+											<li><a href="message_form.php">쪽지 보내기</a></li>
 										</ul>
 									</div>
 							</div>
@@ -192,7 +174,7 @@
 				<div class="menulog">
 					<!-- 왼쪽 메뉴 -->
 					<span class="homeicon"></span>
-					<span class="location">HOME > 홈페이지도우미 > 회원정보 > 정보수정 </span>
+					<span class="location">HOME > 홈페이지도우미 > 회원정보 > 쪽지 보내기 </span>
 					<!-- 오른쪽 좋아요, SNS, 프린트 -->
 					<span class="print_btn"></span>
 					<span class="sns_n"></span>
@@ -201,57 +183,56 @@
 					<span class="sns_f"></span>
 					<span class="like_btn"></span>
 				</div>
-				<h4>회원 정보 수정</h4>
-				<div class="sign_upbox">
-					<div class="join_box">
-						<form name="member_form" method="post" action="member_modify.php?id=<?=$userid?>">
-							<h3>수정해야할 정보를 입력해주세요</h3>
-							<div class="form id">
-								<div class="col1">아이디</div>
-								<div class="col2">
-									<?=$userid?>
-								</div>
-							</div>
-							<div class="form">
-								<div class="col1 pwd">비밀번호</div>
-								<div class="col2">
-									<input type="password" name="pass" value="<?=$pass?>">
-								</div>
-							</div>
-							<div class="form">
-								<div class="col1">비밀번호확인</div>
-								<div class="col2">
-									<input type="password" name="pass_confirm" value="<?=$pass?>">
-								</div>
-							</div>
-							<div class="form">
-								<div class="col1">이름</div>
-								<div class="col2">
-									<input type="text" name="name" value="<?=$name?>">
-								</div>
-							</div>
-							<div class="form email">
-								<div class="col1">이메일</div>
-								<div class="col2 email">
-									<input type="text" name="email1" value="<?=$email1?>"><span>@</span><input type="text" name="email2" value="<?=$email2?>">
-								</div>
-							</div>
-							<div class="buttons">
-<<<<<<< HEAD
-								<img style="cursor:pointer" src="./images/btn_save.png" onclick="check_input()">&nbsp;
-								<img id="reset_button" style="cursor:pointer" src="./images/btn_cancle.png"
-=======
-								<img style="cursor:pointer" src="./images/button_save.gif" onclick="check_input()">&nbsp;
-								<img id="reset_button" style="cursor:pointer" src="./images/button_reset.gif"
->>>>>>> be237eec3ab25fd2ac2850501993fd097b7aaee1
-									onclick="reset_form()">
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+		<div id="message_box">
+   		<h3 class="title">
+<?php
+	$mode = $_GET['mode'];
+	$num  = $_GET['num'];
+
+	$con = mysqli_connect("localhost", DBuser, DBpass, DBname);
+	$sql = "select * from message where num=$num";
+	$result = mysqli_query($con, $sql);
+
+	$row = mysqli_fetch_array($result);
+	$send_id = $row["send_id"];
+	$rv_id = $row["rv_id"];
+	$regist_day = $row["regist_day"];
+	$subject = $row["subject"];
+	$content = $row["content"];
+
+	$content = str_replace(" ", "&nbsp;", $content);
+	$content = str_replace("\n", "<br>", $content);
+
+	if($mode=="send")
+		$result2 = mysqli_query($con, "select name from members where id='$rv_id'");
+	else
+		$result2 = mysqli_query($con, "select name from members where id='$send_id'");
+
+	$record = mysqli_fetch_array($result2);
+	$msg_name = $record["name"];
+
+	if($mode=="send")
+		echo "송신 쪽지함 > 내용보기";
+	else
+		echo " 수신 쪽지함 > 내용보기";
+?>
+   		</h3>
+   		<ul id="view_content">
+   			<li>
+   				<span class="col1"><b>제목 :</b> <?=$subject?></span>
+   				<span class="col1"><?=$msg_name?> | <?=$regist_day?></span>
+   			</li>
+   			<li>
+   				<?=$content?>
+   			</li>
+   		</ul>
+   		<ul class="buttons">
+   			<li><button onclick="location.href='message_box.php?mode=rv'">수신 쪽지함</button></li>
+   			<li><button onclick="location.href='message_box.php?mode=send'">송신 쪽지함</button></li>
+   			<li><button onclick="location.href='message_response_form.php?num=<?=$num?>'">답변 쪽지</button></li>
+   			<li><button onclick="location.href='message_delete.php?num=<?=$num?>&mode=<?=$mode?>'">삭제</button></li>
+   		</ul>
+   	</div><!-- message_box -->
 	</section>
 	<footer>
 		<?php include "footer.php";?>

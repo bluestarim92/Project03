@@ -4,14 +4,25 @@
 <meta charset="utf-8">
 <title>아이디 중복체크</title>
 <style>
+*{margin: 0; padding: 0; border: 0;}
+ul, li{list-style: none}
 h3 {
-	padding-left:  5px;
-	border-left:  solid 5px #edbf07;
+	background:  #008d96;
+	height:  36px;
+	line-height: 36px;
+	color:  #ffffff;
+	font-size:  16px;
+	width:  100%;
+	padding-left:  10px;
+	overflow-x: hidden;
 }
+li{margin-left:  20px; color:  #666666; font-size:  14px; margin-top:  10px;}
 #close {
 	margin:  20px 0 0 80px;
 	cursor:  pointer;
 }
+.btn_close{width: 60px; height: 30px; border-radius:  5px; background: #008d96; color:  #ffffff; position:  absolute; left:  40%; top:  70%; transition: translate(-40%, -70%);}
+
 </style>
 </head>
 <body>

@@ -21,6 +21,7 @@
 	<script src="js/jquery-1.9.1.min.js"></script>
 	<script src="js/jquery-ui-1.10.4.custom.min.js"></script> <!-- UI 플러그인 연동 -->
 	<script src="js/jquery.cookie.js"></script>  <!-- 쿠키 플러그인 연동 -->
+	<script src="https://kit.fontawesome.com/82c75915db.js" crossorigin="anonymous"></script>
 	<script src="js/prefixfree.min.js"></script>
 	<script src="js/html5div.js"></script>
 	<script src="js/html5shiv.js"></script>

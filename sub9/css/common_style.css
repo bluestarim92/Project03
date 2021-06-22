@@ -45,14 +45,14 @@ img{border: 0;}
 	.one_inner{background: #ffffff; height: 53px; position: relative; left: 0px; top: 0px; width: 100%}
 		.one_depth{width: 1420px; background: #ffffff; height: 53px; margin : 0 auto; }
 		.one_depth > li{padding : 0 20px;}
-		.one_depth > li > a {display: block; float: left; padding: 10px 20px; color: #333333; width: 212px; height: 32px; text-align: center;}
+		.one_depth > li > a {display: block; float: left; padding: 10px 20px; color: #333333; width: 212px; height: 32px; text-align: center; font-size:  18px; line-height:  32px; color:  #666666;}
 		.one_depth>.bar{float:left; padding:10px 12px; color: #efefef;}
 		.one_depth .nav_1:hover .two_inner1{display: block;}
 		.one_depth .nav_2:hover .two_inner2{display: block;}
 		.one_depth .nav_3:hover .two_inner3{display: block;}
 		.one_depth .nav_4:hover .two_inner4{display: block;}
 		.one_depth .nav_5:hover .two_inner5{display: block;}
-		.one_depth li:hover >a{border-top:2px solid #20865e; height: 51px}
+		.one_depth li:hover >a{border-top:2px solid #20865e; height: 30px; line-height: 28px;}
 		.one_depth > li:hover .two_depth{border-top:1px solid #bbdfd1;}
 		.one_depth li.nav_1:hover .left_nav_icon1{display:block;}
 		.one_depth li.nav_2:hover .left_nav_icon2{display:block;}
