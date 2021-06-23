@@ -159,12 +159,12 @@
 							<p class="ex">회원님의 아이디 / 비밀번호를 입력해 주십시오.</p>
 							<p class="log">
 								<span>
-									<input name="id" type="text" class="log_ctrl guideText" value="아이디" title="아이디" />
+									<input name="id" type="text" class="log_ctrl guideText" value="admin" title="아이디" />
 								</span>
 							</p>
 							<p class="log">
 								<span>
-									<input name="pass" type="password" class="log_ctrl guideText" value="패스워드" title="패스워드" autocomplete="off" maxlength="30"/>
+									<input name="pass" type="password" class="log_ctrl guideText" value="1234" title="패스워드" autocomplete="off" maxlength="30"/>
 								</span>
 							</p>
 							<p class="log">

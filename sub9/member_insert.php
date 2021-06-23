@@ -23,7 +23,7 @@
 
 	echo "
 		<script>
-			location.href = '../index2.php'; //내 프로젝트에 적용할떄는 index2.php로 할것 index2.php에는 로그인 카운터가 없어야함
+			location.href = '../sub6/login_form.php'; //내 프로젝트에 적용할떄는 index2.php로 할것 index2.php에는 로그인 카운터가 없어야함
 		</script>
 	";
 ?>

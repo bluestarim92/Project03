@@ -226,50 +226,46 @@ function check_input()
 							<div class="form id">
 								<div class="col1">아이디</div>
 								<div class="col2">
-									<input type="text" name="id">
+									<input type="text" name="id" placeholder="아이디 입력" class="input_id">
 								</div>
 								<div class="btn_check">
 
-									<a href="#"><img src="./images/check_id.png"  height="22px"
+									<a href="#"><img src="./images/check_id.png" height="30px"
 										onclick="check_id()"></a>
 								</div>
 							</div>
-							<div class="clear"></div>
 
 							<div class="form">
 								<div class="col1">비밀번호</div>
 								<div class="col2">
-									<input type="password" name="pass">
+									<input type="password" name="pass" placeholder="비밀번호 입력" class="input_pw">
 								</div>
 							</div>
-							<div class="clear"></div>
 
 							<div class="form">
 								<div class="col1">비밀번호확인</div>
 								<div class="col2">
-									<input type="password" name="pass_confirm">
+									<input type="password" name="pass_confirm" placeholder="비밀번호 재입력" class="input_pwcf">
 								</div>
 							</div>
-							<div class="clear"></div>
 
 							<div class="form">
 								<div class="col1">이름</div>
 								<div class="col2">
-									<input type="text" name="name">
+									<input type="text" name="name" placeholder="이름 입력" class="input_name">
 								</div>
 							</div>
-							<div class="clear"></div>
 
 							<div class="form email">
 								<div class="col1">이메일</div>
 								<div class="col2 email">
-									<input type="text" name="email1"><span>@</span><input type="text" name="email2">
+									<input type="text" name="email1" placeholder="이메일 주소 입력" class="input_mail"><span>@</span><input type="text" name="email2" placeholder="이메일 주소 입력">
 								</div>
 							</div>
-							<div class="clear"></div>
+
 							<div class="buttons">
-								<img style="cursor:pointer" src="./images/btn_save.png" height="22px" onclick="check_input()">&nbsp;
-								<img id="reset_button" style="cursor:pointer" height="22px" src="./images/btn_cancle.png" onclick="reset_form()">
+								<img style="cursor:pointer" src="./images/btn_save.png" onclick="check_input()">&nbsp;
+								<img id="reset_button" style="cursor:pointer" src="./images/btn_cancle.png" onclick="reset_form()">
 							</div>
 						</form>
 					</div>

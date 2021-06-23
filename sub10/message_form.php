@@ -217,39 +217,44 @@
 					<span class="sns_f"></span>
 					<span class="like_btn"></span>
 				</div>
-		<div id="message_box">
-			<h3 id="write_title">
-				쪽지 보내기
-			</h3>
-			<ul class="top_buttons">
-				<li><span><a href="message_box.php?mode=rv">수신 쪽지함</a></span></li>
-				<li><span><a href="message_box.php?mode=send">송신 쪽지함</a></span></li>
-			</ul>
-				<form name="message_form" method="post" action="message_insert.php?send_id=<?=$userid?>">
-					<div id="write_msg">
-						<ul>
-							<li>
-								<span class="col1">보내는 사람 : </span>
-								<span class="col2"><?=$userid?></span>
-							</li>
-							<li>
-								<span class="col1">수신 아이디 : </span>
-								<span class="col2"><input type="text" name="rv_id"></span>
-							</li>
-							<li>
-								<span class="col1">제목 : </span>
-								<span class="col2"><input type="text" name="subject"></span>
-							</li>
-							<li id="text_area">
-								<span class="col1">내용 : </span>
-								<span class="col2">
-									<textarea name="content"></textarea>
-								</span>
-							</li>
-						</ul>
-						<button type="button" onclick="check_input()">보내기</button>
-					</div>
-				</form>
+		<div class="message_info">
+			
+		</div>
+		<div class="message_box">
+			<div class="message_menu_wrap">
+				<h3 id="write_title">
+					쪽지 보내기
+				</h3>
+				<ul class="top_buttons">
+					<li class="mail_snd"><span><a href="message_box.php?mode=rv">수신 쪽지함</a></span></li>	
+					<li class="mail_rcv"><span><a href="message_box.php?mode=send">송신 쪽지함</a></span></li>
+				</ul>	
+			</div>
+			<form name="message_form" method="post" action="message_insert.php?send_id=<?=$userid?>">
+				<div id="write_msg">
+					<ul>
+						<li class="send_user">
+							<span class="col1">보내는 사람 : </span>
+							<span class="col2"><?=$userid?></span>
+						</li>
+						<li>
+							<span class="col1">수신 아이디 :&nbsp;&nbsp;</span>
+							<span class="col2"><input type="text" name="rv_id" class="recieve_user" placeholder="수신 아이디 입력"></span>
+						</li>
+						<li>
+							<span class="col1">제목 :&nbsp;&nbsp;</span>
+							<span class="col2"><input type="text" name="subject" class="subject" placeholder="제목 입력"></span>
+						</li>
+						<li id="text_area">
+							<span class="col1">내용 : </span>
+							<span class="col2">
+								<textarea name="content"></textarea>
+							</span>
+						</li>
+					</ul>
+					<button type="button" onclick="check_input()">보내기</button>
+				</div>
+			</form>
 		</div><!-- message_box -->
 	</section>
 	<footer>

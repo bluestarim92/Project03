@@ -215,25 +215,25 @@
 							<div class="form">
 								<div class="col1 pwd">비밀번호</div>
 								<div class="col2">
-									<input type="password" name="pass" value="<?=$pass?>">
+									<input type="password" name="pass" value="<?=$pass?>" class="input_pw">
 								</div>
 							</div>
 							<div class="form">
 								<div class="col1">비밀번호확인</div>
 								<div class="col2">
-									<input type="password" name="pass_confirm" value="<?=$pass?>">
+									<input type="password" name="pass_confirm" value="<?=$pass?>" class="input_pwcf">
 								</div>
 							</div>
 							<div class="form">
 								<div class="col1">이름</div>
 								<div class="col2">
-									<input type="text" name="name" value="<?=$name?>">
+									<input type="text" name="name" value="<?=$name?>" class="input_name">
 								</div>
 							</div>
 							<div class="form email">
 								<div class="col1">이메일</div>
 								<div class="col2 email">
-									<input type="text" name="email1" value="<?=$email1?>"><span>@</span><input type="text" name="email2" value="<?=$email2?>">
+									<input type="text" name="email1" value="<?=$email1?>" class="input_mail"><span>@</span><input type="text" name="email2" value="<?=$email2?>">
 								</div>
 							</div>
 							<div class="buttons">

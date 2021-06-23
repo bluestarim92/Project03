@@ -27,27 +27,27 @@
 <?php  
 	if(!$userid) {
 ?>	
-				<li class="gnb_icon1"><a href="member_form.php">회원가입</a></li>
+				<li class="gnb_icon1"><a href="../sub9/member_form.php">회원가입</a></li>
 				<li class="gnb_icon2"><a href="../sub6/login_form.php">로그인</a></li>
 <?php 	
 	} else {
 		$logged = $username."(".$userid.")님[Level:".$userlevel.", Point:".$userpoint."]";
 ?>
-				<li class="gnb_icon1"><a href="member_modify_form.php">정보수정</a></li>
+				<li class="gnb_icon1"><a href="../sub9/member_modify_form.php">정보수정</a></li>
 				<li class="gnb_icon2"><a href="../logout.php">로그아웃</a></li>
 <?php
 	}
 ?>
+				<li class="gnb_icon3"><a href="https://www.nec.go.kr/site/abroad/main.do">재외선거</a></li>
+				<li class="gnb_icon4"><a href="https://www.nec.go.kr/site/sn/main.do">미래유권자</a></li>
+				
 <?php
 	if($userlevel==1){
 ?>
-				<li> |</li>
-				<li><a href="admin.php">관리자 모드(15CH)</a></li>
-<?php 	
- 	}
-?>
-				<li class="gnb_icon3"><a href="https://www.nec.go.kr/site/abroad/main.do">재외선거</a></li>
-				<li class="gnb_icon4"><a href="https://www.nec.go.kr/site/sn/main.do">미래유권자</a></li>
+				<li><a href="admin.php">관리자 모드</a></li>
+<?php
+	}
+?>				
 				<li class="eng"><a href="https://www.nec.go.kr/site/eng/main.do"><span class="english">English</span></a></li>
 			</ul>
 		</div>
