@@ -237,14 +237,10 @@
 								</div>
 							</div>
 							<div class="buttons">
-<<<<<<< HEAD
+
 								<img style="cursor:pointer" src="./images/btn_save.png" onclick="check_input()">&nbsp;
 								<img id="reset_button" style="cursor:pointer" src="./images/btn_cancle.png"
-=======
-								<img style="cursor:pointer" src="./images/button_save.gif" onclick="check_input()">&nbsp;
-								<img id="reset_button" style="cursor:pointer" src="./images/button_reset.gif"
->>>>>>> be237eec3ab25fd2ac2850501993fd097b7aaee1
-									onclick="reset_form()">
+										onclick="reset_form()">
 							</div>
 						</form>
 					</div>

@@ -229,15 +229,8 @@ function check_input()
 									<input type="text" name="id">
 								</div>
 								<div class="btn_check">
-<<<<<<< HEAD
-									<a href="#"><img src="images/check_id.png" 
-=======
-<<<<<<< HEAD
-									<a href="#"><img src="images/check_id.png" 
-=======
+
 									<a href="#"><img src="./images/check_id.png"  height="22px"
->>>>>>> 4c57ecaa560babdae6721bd0c4e506d3281f658a
->>>>>>> be237eec3ab25fd2ac2850501993fd097b7aaee1
 										onclick="check_id()"></a>
 								</div>
 							</div>
@@ -275,47 +268,21 @@ function check_input()
 							</div>
 							<div class="clear"></div>
 							<div class="buttons">
-<<<<<<< HEAD
-								<img style="cursor:pointer" src="images/btn_save.png" onclick="check_input()">&nbsp;
-								<img id="reset_button" style="cursor:pointer" src="images/btn_cancle.png"
-=======
-<<<<<<< HEAD
-								<img style="cursor:pointer" src="images/btn_save.png" onclick="check_input()">&nbsp;
-								<img id="reset_button" style="cursor:pointer" src="images/btn_cancle.png"
-=======
 								<img style="cursor:pointer" src="./images/btn_save.png" height="22px" onclick="check_input()">&nbsp;
-								<img id="reset_button" style="cursor:pointer" height="22px" src="./images/btn_cancle.png"
->>>>>>> 4c57ecaa560babdae6721bd0c4e506d3281f658a
->>>>>>> be237eec3ab25fd2ac2850501993fd097b7aaee1
-									onclick="reset_form()">
+								<img id="reset_button" style="cursor:pointer" height="22px" src="./images/btn_cancle.png" onclick="reset_form()">
 							</div>
 						</form>
 					</div>
 				</div>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> be237eec3ab25fd2ac2850501993fd097b7aaee1
-				<h4>SNS 회원 가입</h4>
-				<div class="sns_signup">
-					<a href="../index2.php"><img src="images/signup_naver.png" alt="SNS가입1"></a>
-					<a href="../index2.php"><img src="images/signup_kakao.png" alt="SNS가입2"></a>
-					<a href="../index2.php"><img src="images/signup_google.png" alt="SNS가입3"></a>
-					<a href="../index2.php"><img src="images/signup_facebook.png" alt="SNS가입4"></a>
-					<a href="../index2.php"><img src="images/signup_twitter.png" alt="SNS가입5"></a>
-					<a href="../index2.php"><img src="images/signup_apple.png" alt="SNS가입6" width="264"></a>
-<<<<<<< HEAD
-=======
-=======
 				<h4>소셜계정으로 회원 가입</h4>
 				<div class="sns_signup">
-					<a href="http://bluestarim92.dothome.co.kr/project03/index2.php"><img src="images/signup_naver.png"></a>
-					<a href="http://bluestarim92.dothome.co.kr/project03/index2.php"><img src="images/signup_kakao.png"></a>
-					<a href="http://bluestarim92.dothome.co.kr/project03/index2.php"><img src="images/signup_google.png"></a>
-					<a href="http://bluestarim92.dothome.co.kr/project03/index2.php"><img src="images/signup_facebook.png"></a>
-					<a href="http://bluestarim92.dothome.co.kr/project03/index2.php"><img src="images/signup_twitter.png"></a>
->>>>>>> 4c57ecaa560babdae6721bd0c4e506d3281f658a
->>>>>>> be237eec3ab25fd2ac2850501993fd097b7aaee1
+					<a href="../index2.php"><img src="images/signup_naver.png"></a>
+					<a href="../index2.php"><img src="images/signup_kakao.png"></a>
+					<a href="../index2.php"><img src="images/signup_google.png"></a>
+					<a href="../index2.php"><img src="images/signup_facebook.png"></a>
+					<a href="../index2.php"><img src="images/signup_twitter.png"></a>
+					<a href="../index2.php"><img src="images/signup_apple.png" alt="SNS가입6" width="264"></a>
+
 				</div>
 			</div>
 		</div>

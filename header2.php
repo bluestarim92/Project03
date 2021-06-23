@@ -27,16 +27,15 @@
 <?php  
 	if(!$userid) {
 ?>	
+				<li><a href="sub10/message_form.php"><i class="fas fa-envelope"></i></a></li>
 				<li class="gnb_icon1"><a href="sub9/member_form.php">회원가입</a></li>
 				<li class="gnb_icon2"><a href="sub6/login_form.php">로그인</a></li>
 <?php 	
 	} else {
 		$logged = $username."(".$userid.")님[Level:".$userlevel.", Point:".$userpoint."]";
 ?>
-<<<<<<< HEAD
+				<li><?=$logged?></li><br>
 				<li><a href="sub10/message_form.php"><i class="fas fa-envelope"></i></a></li>
-=======
->>>>>>> be237eec3ab25fd2ac2850501993fd097b7aaee1
 				<li class="gnb_icon1"><a href="sub9/member_modify_form.php">정보수정</a></li>
 				<li class="gnb_icon2"><a href="logout.php">로그아웃</a></li>
 <?php
