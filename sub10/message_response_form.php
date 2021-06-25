@@ -24,10 +24,22 @@
     <script src="js/sub10.js"></script>
     <script>
 		function check_input(){
+			if(!document.message_form.subject.value.trim())
+			{
+				alert("제목을 입력하세요!");
+				document.message_form.subject.focus();
+				return;
+			}
 			if(!document.message_form.subject.value)
 			{
 				alert("제목을 입력하세요!");
 				document.message_form.subject.focus();
+				return;
+			}
+			if(!document.message_form.content.value.trim())
+			{
+				alert("내용을 입력하세요!");
+				document.message_form.content.focus();
 				return;
 			}
 			if(!document.message_form.content.value)

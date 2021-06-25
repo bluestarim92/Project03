@@ -24,10 +24,22 @@
     <script src="js/sub10.js"></script>
     <script>
 		function check_input(){
+			if(!document.message_form.rv_id.value.trim())
+			{
+				alert("수신 아이디를 입력하세요!");
+				document.message_form.rv_id.focus();
+				return;
+			}//공란을 입력받으면 
 			if(!document.message_form.rv_id.value)
 			{
 				alert("수신 아이디를 입력하세요!");
 				document.message_form.rv_id.focus();
+				return;
+			}
+			if(!document.message_form.subject.value.trim())
+			{
+				alert("제목을 입력하세요!");
+				document.message_form.subject.focus();
 				return;
 			}
 			if(!document.message_form.subject.value)
@@ -36,7 +48,13 @@
 				document.message_form.subject.focus();
 				return;
 			}
-			if(!document.message_form.content.value)
+			if(!document.message_form.content.value.trim())
+			{
+				alert("내용을 입력하세요!");
+				document.message_form.subject.focus();
+				return;
+			}
+			if(!document.message_form.contentt.value)
 			{
 				alert("내용을 입력하세요");
 				document.message_form.content.focus();

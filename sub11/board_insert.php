@@ -1,6 +1,6 @@
 <meta charset="utf-8">
 <?php
-	include "define.php";
+	include "../define.php";
 
 	session_start();
 	if (isset($_SESSION["userid"])) $userid = $_SESSION["userid"];

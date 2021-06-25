@@ -1,38 +1,70 @@
    function check_input()
    {
-      if (!document.member_form.pass.value)
+      if(!document.member_form.id.value.trim())
       {
-          alert("비밀번호를 입력하세요!");    
-          document.member_form.pass.focus();
-          return;
+        alert("아이디를 입력하세요!");
+        document.member_form.id.value.focus();
+        return;
       }
-
-      if (!document.member_form.pass_confirm.value)
-      {
-          alert("비밀번호확인을 입력하세요!");    
-          document.member_form.pass_confirm.focus();
-          return;
+      if(!document.member_form.id.value) {
+        alert("아이디를 입력하세요!");
+        document.member_form.id.focus();
+        return;
       }
-
-      if (!document.member_form.name.value)
+      if(!document.member_form.id.pass.trim())
       {
-          alert("이름을 입력하세요!");    
-          document.member_form.name.focus();
-          return;
+        alert("비밀번호를 입력하세요!");
+        document.member_form.id.pass.focus();
+        return;
       }
-
-      if (!document.member_form.email1.value)
-      {
-          alert("이메일 주소를 입력하세요!");    
-          document.member_form.email1.focus();
-          return;
+      if(!document.member_form.pass.value) {
+        alert("비밀번호를 입력하세요!");
+        document.member_form.pass.focus();
+        return;
       }
-
-      if (!document.member_form.email2.value)
+      if(!document.member_form.id.pass_confirm.trim())
       {
-          alert("이메일 주소를 입력하세요!");    
-          document.member_form.email2.focus();
-          return;
+        alert("비밀번호확인를 입력하세요!");
+        document.member_form.id.pass_confirm.focus();
+        return;
+      }
+      if(!document.member_form.pass_confirm.value) {
+        alert("비밀번호확인을 입력하세요!");
+        document.member_form.pass_confirm.focus();
+        return;
+      }
+      if(!document.member_form.name.value.trim())
+      {
+        alert("이름을 입력하세요!");
+        document.member_form.name.value.focus();
+        return;
+      }
+      if(!document.member_form.name.value) {
+        alert("이름을 입력하세요!");
+        document.member_form.name.focus();
+        return;
+      }
+      if(!document.member_form.email1.value.trim())
+      {
+        alert("이메일 주소를 입력하세요!");
+        document.member_form.email1.value.focus();
+        return;
+      }
+      if(!document.member_form.email1.value) {
+        alert("이메일 주소를 입력하세요!");
+        document.member_form.email1.focus();
+        return;
+      }
+      if(!document.member_form.email2.value.trim())
+      {
+        alert("이메일 주소를 입력하세요!");
+        document.member_form.email2.value.focus();
+        return;
+      }
+      if(!document.member_form.email2.value) {
+        alert("이메일 주소를 입력하세요!");
+        document.member_form.email2.focus();
+        return;
       }
 
       if (document.member_form.pass.value != 
