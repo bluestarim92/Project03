@@ -41,8 +41,7 @@
 <?php
 	if($userlevel==1){
 ?>
-				<li> |</li>
-				<li><a href="admin.php">관리자 모드(15CH)</a></li>
+				<li class="gnb_icon5"><a href="admin.php">관리자 모드</a></li>
 <?php 	
  	}
 ?>

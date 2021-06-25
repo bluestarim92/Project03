@@ -35,6 +35,7 @@ img{border: 0;}
 		.gnb li.gnb_icon2{float:left; background: url(../../images/globalLink_bg.png) no-repeat left -21px;}
 		.gnb li.gnb_icon3{float:left; background: url(../../images/globalLink_bg.png) no-repeat left -43px;}
 		.gnb li.gnb_icon4{float:left; background: url(../../images/globalLink_bg.png) no-repeat left -65px; }
+		.gnb li.gnb_icon5{float:left; background: url(../../images/admin.png) no-repeat left center; }
 		.gnb li.eng{float: left; padding : 0 0 0 5px; top: -1px;}
 		.gnb li.eng a:after{ border : 0;}
 		.gnb li.eng a{text-align: center;}

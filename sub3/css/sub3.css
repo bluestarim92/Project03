@@ -2,6 +2,7 @@
 /* body{background:url(../images/nec_Board1.png) no-repeat center top; height: 5000px;} */
 .fl{float: left;}
 .fr{float: right;}
+a{text-decoration: none; color:  #666666;}
 ul, li{list-style:none;}
 
 
@@ -14,11 +15,11 @@ ul, li{list-style:none;}
 		.aside1 .sidewrap .sidemenu{width: 100%; height: auto;}
 		.aside1 .sidewrap .sidemenu .title{width: 280px; height: 60px; display: block; font-size: 1.1em; line-height: 60px; padding-left: 18px; color: #666666; border-bottom: 1px solid #dddddd;}
 		.aside1 .sidewrap .sidemenu .subsidemenu{display: none; overflow: hidden; height: auto; transition: all 1s;}
-		.aside1 .sidewrap .sidemenu.on span{color: #ffffff; background: #ed63ac;}
+		.aside1 .sidewrap .sidemenu.on span{color: #ffffff; background: #537c8e;}
 		.aside1 .sidewrap .sidemenu.on .subsidemenu{display: block;}
 		.aside1 .sidewrap .sidemenu .subsidemenu .sidecontent{padding: 10px 20px; box-sizing: border-box; padding: 10px 20px; width: 100%; height: 100%; background: #fcfcfc; overflow: hidden; transition: all 0.6s; border-top: 1px solid #dddddd;}
 		.aside1 .sidewrap .sidemenu .subsidemenu .sidecontent li{line-height: 25px; font-size: 1em;}
-		.aside1 .sidewrap .sidemenu .subsidemenu .sidecontent li.on a{color: #ed63ac; font-weight: bold;}
+		.aside1 .sidewrap .sidemenu .subsidemenu .sidecontent li.on a{color: #071739; font-weight: bold;}
 		.aside1 .sidewrap .sidemenu .subsidemenu .sidecontent li a{color: #666666;}
 		
 		.aside2{display: block; background: #ffffff; float:left; width: 274px; height: 213px; margin-bottom:10px; padding: 12px;}

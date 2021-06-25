@@ -1,3 +1,7 @@
+<div class="chat_bb">
+	<span>쪽지기능<br>
+		  추가!</span>
+</div>
 <div id="bg_100">
 	<div id="wrapper">
 		<div id="container">

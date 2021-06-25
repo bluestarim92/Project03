@@ -80,7 +80,7 @@ a{color: #666666;}
 	
 	.id{margin-bottom:  70px;}
 
-	.pwd{position:  absolute; left:  805px; top:  360px;}
+	.pwd{position:  absolute; left:  805px; top:  360px; box-sizing: border-box;}
 
 	
 	

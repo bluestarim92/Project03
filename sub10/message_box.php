@@ -84,7 +84,7 @@
 											<li><a href="#">아이디찾기</a></li>
 											<li><a href="#">정보수정</a></li>
 											<li><a href="#">회원가입</a></li>
-											<li><a href="message_form.php">쪽지 보내기</a></li>
+											<li><a href="message_box.php">쪽지 보내기</a></li>
 										</ul>
 									</div>
 							</div>
@@ -194,8 +194,17 @@
 					<span class="sns_f"></span>
 					<span class="like_btn"></span>
 				</div>
-		<div id="message_box">
-	    <h3>
+			<div class="message_info">
+			<p>중앙선거관리위원회 회원들의 자유로운 의견 교환을 위해 제공하는 서비스 입니다.<br><br>
+			아름다운 선거 문화를 위해 회원분들은 인터넷 에티켓을 준수해주시기 바랍니다.</p>
+			<div class="message_img">
+				<img src="images/messenger.png">
+			</div>
+		</div>
+		<div class="message_box">
+
+			<div class="message_menu_wrap">
+	    <h3 id="write_title2">
 <?php
  		if (isset($_GET["page"]))
 			$page = $_GET["page"];
@@ -205,17 +214,23 @@
 		$mode = $_GET["mode"];
 
 		if ($mode=="send")
-			echo "송신 쪽지함 > 목록보기";
+			echo "송신 쪽지함 <br> 목록보기";
 		else
-			echo "수신 쪽지함 > 목록보기";
+			echo "수신 쪽지함 <br> 목록보기";
 ?>
 		</h3>
-		<!-- <div> 필요없음 -->
-		<ul id="message">
+		<ul class="top_buttons">
+			<li class="mail_snd"><span><a href="message_box.php?mode=rv">수신 쪽지함</a></span></li>	
+			<li class="mail_rcv"><span><a href="message_box.php?mode=send">송신 쪽지함</a></span></li>
+			<li class="plane"><span><a href="message_form.php">쪽지 보내기</a></span></li>
+		</ul>	
+		  </div>
+		<div class="sndrcv_message">
+		<ul id="message_box">
 			<li>
-				<span class="col1">번호</span>
-				<span class="col2">제목</span>
-				<span class="col3">
+				<span class="mb_col1">번호</span>
+				<span class="mb_col2">제목</span>
+				<span class="mb_col3">
 <?php						
 					if ($mode=="send")
 						echo "받은이";
@@ -223,7 +238,7 @@
 						echo "보낸이";
 ?>
 				</span>
-				<span class="col4">등록일</span>
+				<span class="mb_col4">등록일</span>
 			</li>
 <?php
 	$con = mysqli_connect("localhost", DBuser, DBpass, DBname);
@@ -269,10 +284,10 @@
       $msg_name     = $record["name"];	  
 ?>
 			<li>
-				<span class="col1"><?=$number?></span>
-				<span class="col2"><a href="message_view.php?mode=<?=$mode?>&num=<?=$num?>"><?=$subject?></a></span>
-				<span class="col3"><?=$msg_name?>(<?=$msg_id?>)</span>
-				<span class="col4"><?=$regist_day?></span>
+				<span class="sb_col1"><?=$number?></span>
+				<span class="sb_col2"><a href="message_view.php?mode=<?=$mode?>&num=<?=$num?>"><?=$subject?></a></span>
+				<span class="sb_col3"><?=$msg_name?>(<?=$msg_id?>)</span>
+				<span class="sb_col4"><?=$regist_day?></span>
 			</li>	
 <?php
 	   $number--;
@@ -312,11 +327,12 @@
 			echo "<li>&nbsp;</li>";
 ?>
 		</ul> <!-- page -->	    	
-		<ul class="buttons">
+		<ul class="box_buttons">
 			<li><button onclick="location.href='message_box.php?mode=rv'">수신 쪽지함</button></li>
 			<li><button onclick="location.href='message_box.php?mode=send'">송신 쪽지함</button></li>
 			<li><button onclick="location.href='message_form.php'">쪽지 보내기</button></li>
 		</ul>
+		</div>
 	</div> <!-- message_box -->
 	</section>
 	<footer>

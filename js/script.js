@@ -518,4 +518,12 @@
 	};
 	fm_timer();
 
+	function swing(){
+		$('.chat_bb').animate({'top':'40px'},1000).animate({'top':'60px'},1000);
+		
+	};
+	setInterval(swing,1000);
+
+	swing();
+
 });

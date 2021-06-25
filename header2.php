@@ -44,8 +44,7 @@
 <?php
 	if($userlevel==1){
 ?>
-				<li> |</li>
-				<li><a href="admin.php">관리자 모드(15CH)</a></li>
+				<li class="gnb_icon5"><a href="admin.php">관리자 모드</a></li>
 <?php 	
  	}
 ?>
@@ -54,8 +53,9 @@
 				<li class="eng"><a href="https://www.nec.go.kr/site/eng/main.do"><span class="english">English</span></a></li>
 			</ul>
 		</div>
+
 	</div>
-</div>	
+</div>
 <div id="nav">
 	<div class="one_inner">
 		<ul class="one_depth">

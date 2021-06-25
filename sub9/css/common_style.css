@@ -22,12 +22,12 @@ img{border: 0;}
 #header{width: 100%; height: 81px;  /* background-color: rgba( 5, 5, 5, 0.5 ) */ border-bottom: 1px solid #efefef;}
 	.headerwrap{width: 1420px; height:56px;  padding-bottom: 25px; margin: 0 auto; }
 	.logo{float:left; width: 280px; height: 65px; margin: 10px 0 9px 0; background:url(../../images/logo.png) no-repeat;}
-	.search_box{float:left; position: relative; top: 15px; width: 380px; height: 47px; margin: 0 0 0 16.6%; }
+	.search_box{float:left; position: relative; top: 15px; width: 380px; height: 47px; margin: 0 0 0 7.6%; }
 	.search_box input{border: 0; border: 1px solid #cccccc; border-radius: 35px; background: #fafafa; width: 390px; height: 47px; text-align: justify; padding-left: 20px; box-sizing: border-box;}
 	.search_box > .btn_search_box{position: absolute; right: 12px; top: 14px;}
 	.guide_color{color: #999999;}
 	.search_box input:focus {outline:none; background: #fafafa;}
-	.gnb{position: relative; float: right; width: 440.9px; height: 20px; top: 20px; text-decoration: none; box-sizing: border-box; padding: 10px 0px;}
+	.gnb{position: relative; float: right; width: 578.9px; height: 20px; top: 20px; text-decoration: none; box-sizing: border-box; padding: 10px 0px;}
 		.gnb > ul > li{position: relative; float:left; padding : 0 6px 0 22px; font-weight: 400; }
 		.gnb li.gnb_icon1{float:left; background: url(../../images/globalLink_bg.png) no-repeat left 1px;}
 		.gnb li a{float: left; display: block; text-decoration: none; color: #888888; padding-right: 5px;}
@@ -35,6 +35,7 @@ img{border: 0;}
 		.gnb li.gnb_icon2{float:left; background: url(../../images/globalLink_bg.png) no-repeat left -21px;}
 		.gnb li.gnb_icon3{float:left; background: url(../../images/globalLink_bg.png) no-repeat left -43px;}
 		.gnb li.gnb_icon4{float:left; background: url(../../images/globalLink_bg.png) no-repeat left -65px; }
+		.gnb li.gnb_icon5{float:left; background: url(../../images/admin.png) no-repeat left center; }
 		.gnb li.eng{float: left; padding : 0 0 0 5px; top: -1px;}
 		.gnb li.eng a:after{ border : 0;}
 		.gnb li.eng a{text-align: center;}

@@ -1,4 +1,4 @@
-﻿*{margin:0; padding:0;}
+*{margin:0; padding:0;}
 a{color: #666666;}
 /* body{background:url(../images/nec_login.png) no-repeat center top; height: 5000px;} */
 #wrapper{width: 100%; height: 1420px; background: #e0f3fa; margin-top:4px;}
@@ -40,7 +40,7 @@ a{color: #666666;}
 		.aside3 h3{font-size: 22px; text-align: center; margin-bottom: 15px;}
 		.aside3 ul li{display: block; height: 38px; background: #e2e4e9 url(../../images/bullet.png) no-repeat 8px 20px; padding-left: 15px; margin-bottom: 5px; line-height: 40px; font-weight: normal;}
 		.aside3 ul li a:hover{text-decoration: underline;}
-	.article1{display: block; float:right; width: 1044px; height: 750px; margin-right: 32px; margin-top: 38px; background: #ffffff;}
+	.article1{display: block; float:right; width: 1044px; height: 650px; margin-right: 32px; margin-top: 38px; background: #ffffff;}
 	.menulog{display:block; width: 990px; height: 25px; border-bottom: 2px solid #444444; margin: 0 auto; padding-top: 20px; margin-bottom: 20px;}
 			.homeicon{display: block; width: 24px; height: 24px;  float:left; background:url(../../images/bu_home.gif)  no-repeat center left; cursor: pointer;}
 				.location{font-size:0.8em; color: #666666;}
@@ -53,20 +53,30 @@ a{color: #666666;}
 				.sns_f{display:block; float:right; width: 24px; height: 24px; background: url(../../images/sns_facebook.gif) no-repeat center right; cursor:pointer;}
 	.article1 > h4{float: left; width: 100%; background: url(../../images/bu_tit1.gif) no-repeat left 2px; margin-top: 10px; margin-bottom: 10px; float: left; padding-left: 10px; margin-left: 27px;}
 
-	.message_info{float:  left; width:  880px; height: 200px; padding:  10px; }
+	.message_info{float:  left; width:  880px; height: 70px; padding:  10px; margin-left: 190px;}
+	.message_info p{float:  left; padding-left:  10px; margin-bottom:  10px; font-size:  16px; color:  #555555;}
+	.message_info .message_img{float:  left; padding-left:  30px;}
+
 	.message_box{float: left; width: 880px; height: 440px; border: 1px solid #999999; border-top: 2px solid #333333; margin-left: 84px;}
+	#snd_message_box{float: left; width: 880px; height: 440px; border: 1px solid #999999; border-top: 2px solid #333333; margin-left: 84px;}
 	
 	.id{margin-bottom:  70px;}
 	.pwd{position:  absolute; left:  805px; top:  360px;}
 
 	.message_menu_wrap{float:  left; width: 200px; box-sizing:  border-box; border-right:  1px solid #dddddd; height:  440px; padding:  20px;}
 	
-	#write_title{width:  140px; height:  40px; font-size:  1.6em; color:  #537c8e; background: #ffffff; line-height: 40px; text-align: center; margin: 0 auto 20px auto;}
-	.top_buttons > li {margin-bottom:  10px; padding-left: 40px; font-size:  16px;}
+	#write_title{width:  140px; height:  40px; font-size:  1.6em; color:  #537c8e; background: #ffffff; line-height: 40px; text-align: center; margin: 50px auto 40px auto;}
+	#write_title2{width:  140px; height:  40px; font-size:  1.6em; color:  #537c8e; background: #ffffff; line-height: 40px; text-align: center; margin: 50px auto 80px auto;}
+	.top_buttons > li {margin-bottom:  25px; padding-left: 40px; font-size:  16px;}
+	.top_buttons > li.active a{color:  #648cff; filter: drop-shadow(.5rem .5rem 1rem #90caf9);}
+	
+	
 	.mail_snd{background: url(../images/mail_snd.png) left center no-repeat;}
 	.mail_rcv{background: url(../images/mail_rcv.png) left center no-repeat;}
+	.plane{background: url(../images/throw_plane.png) left center no-repeat;}
 	
-	#write_msg{box-sizing: border-box; width: 680px; height:  440px; float: left; padding:  40px;}
+	#write_msg{box-sizing: border-box; width: 680px; height:  440px; float: left; padding:  40px; }
+	.sndrcv_message{box-sizing: border-box; width: 680px; height:  440px; float: left; padding:  40px; }
 	
 	#write_msg > ul > li{margin-bottom:  15px;}
 	#write_msg > ul > li > span{font-size:  18px; color:  #555555;}
@@ -75,11 +85,29 @@ a{color: #666666;}
 	#text_area > .col1{position:  relative; top: -175px; box-sizing: border-box;}
 	#text_area > .col2 > textarea{width:  487px; height:  191px;}
 
-	#write_msg > button{width:  60px; height:  30px; position:  relative; bottom: -10px; left:  480px; background:  #008d96; color: #ffffff; border-radius: 5px; font-weight:  bold; bo}
+	#write_msg > button{width:  60px; height:  30px; position:  relative; bottom: -10px; left:  480px; background:  #008d96; color: #ffffff; border-radius: 5px; font-weight:  bold; border:  none; box-sizing: border-box;}
 
+	.mb_col1{float: left; width: 60px; height: 30px; font-size: 16px; line-height: 30px; border: 1px solid #666666; border-top: 3px solid #537c8e; border-right: none; text-align:  center; border-left:  none; box-sizing: border-box; color:  #666666;}
+	.mb_col2{float: left; width: 250px; height: 30px; font-size: 16px; line-height: 30px; border: 1px solid #666666; border-top: 3px solid #537c8e; border-right: none; text-align:  center; box-sizing: border-box; color:  #666666;} 
+	.mb_col3{float: left; width: 120px; height: 30px; font-size: 16px; line-height: 30px; border: 1px solid #666666; border-top: 3px solid #537c8e; border-right: none; text-align:  center; box-sizing: border-box;  color:  #666666;}
+	.mb_col4{float: left; width: 165px; height: 30px; font-size: 16px; line-height: 30px; border: 1px solid #666666; border-top: 3px solid #537c8e; text-align:  center; border-right:  none; box-sizing: border-box; color:  #666666;}
 
+	.sb_col1{float: left; width: 60px; height: 28px; font-size: 14px; line-height: 28px; border: 1px solid #666666; border-top: none; border-right: none; text-align:  center; border-left: none; box-sizing: border-box; color:  #666666;}
+	.sb_col2{float: left; width: 250px; height: 28px; font-size: 14px; line-height: 28px; border: 1px solid #666666; border-top: none; border-right: none;  box-sizing: border-box; color:  #666666;}
+	.sb_col2 > a{padding-left:  10px; color:  #222222;  width:  230px; display:  block;  text-overflow: ellipsis; overflow: hidden; white-space: nowrap; box-sizing: border-box; color:  #666666;}
+	.sb_col3{float: left; width: 120px; height: 28px; font-size: 14px; line-height: 28px; border: 1px solid #666666; border-top: none; border-right: none; text-align: center; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; box-sizing: border-box; padding-left:  10px; padding-right:  10px; color:  #666666;}
+	.sb_col4{float: left; width: 165px; height: 28px; font-size: 14px; line-height: 28px; border: 1px solid #666666; border-top: none; text-align:  center; border-right: none;box-sizing: border-box;  color:  #666666;}
 
-	
-	
-	
-	
+	.mx_col1{float: left; width: 337px; height: 30px; font-size: 16px; line-height: 30px; border: 1px solid #666666; border-top: 3px solid #537c8e; border-right: none; border-left:  none; box-sizing: border-box;  color:  #666666;}
+	.mx_title{text-align: justify;padding-left: 10px;  text-overflow: ellipsis; overflow: hidden; width: 320px; white-space: nowrap; box-sizing: border-box;  color:  #666666;}
+	.mx_col2{float: left; width: 100px; height: 30px; font-size: 16px; line-height: 30px; border: 1px solid #666666; border-top: 3px solid #537c8e; border-right: none; text-align:  center; box-sizing: border-box;  color:  #666666;}
+	.mx_col3{float: left; width: 160px; height: 30px; font-size: 16px; line-height: 30px; border: 1px solid #666666; border-top: 3px solid #537c8e; border-right: none; text-align:  center; box-sizing: border-box;  color:  #666666;}
+
+	.sx_box{float: left; width: 597px; font-size: 14px; border: 1px solid #666666; border-top:  none; border-right: none; border-left:  none; padding:  10px 20px 10px 20px; box-sizing:  border-box; height:  280px; margin-bottom:  20px; line-height:  30px; color:  #666666;}
+
+	#page_num {	text-align: center;	margin: 30px 0 }
+	#page_num li { display: inline; }
+
+	.box_buttons{float: right;}
+	.box_buttons >li {float: left; margin-right:  10px; margin-top:  -10px;}
+	.box_buttons >li > button {width:  90px; height:  36px; border: none; background: #537c8e; color:  #ffffff; border-radius: 5px; font-weight: bold; line-height: 36px;}

@@ -218,7 +218,11 @@
 					<span class="like_btn"></span>
 				</div>
 		<div class="message_info">
-			
+			<p>중앙선거관리위원회 회원들의 자유로운 의견 교환을 위해 제공하는 서비스 입니다.<br><br>
+			아름다운 선거 문화를 위해 회원분들은 인터넷 에티켓을 준수해주시기 바랍니다.</p>
+			<div class="message_img">
+				<img src="images/messenger.png">
+			</div>
 		</div>
 		<div class="message_box">
 			<div class="message_menu_wrap">
@@ -228,6 +232,7 @@
 				<ul class="top_buttons">
 					<li class="mail_snd"><span><a href="message_box.php?mode=rv">수신 쪽지함</a></span></li>	
 					<li class="mail_rcv"><span><a href="message_box.php?mode=send">송신 쪽지함</a></span></li>
+					<li class="plane active"><span><a href="message_form.php">쪽지 보내기</a></span></li>
 				</ul>	
 			</div>
 			<form name="message_form" method="post" action="message_insert.php?send_id=<?=$userid?>">

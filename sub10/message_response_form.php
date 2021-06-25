@@ -90,7 +90,7 @@
 											<li><a href="#">아이디찾기</a></li>
 											<li><a href="#">정보수정</a></li>
 											<li><a href="#">회원가입</a></li>
-											<li><a href="message_form.php">쪽지 보내기</a></li>
+											<li><a href="message_response_form.php">쪽지 보내기</a></li>
 										</ul>
 									</div>
 							</div>
@@ -200,10 +200,25 @@
 					<span class="sns_f"></span>
 					<span class="like_btn"></span>
 				</div>
-		<div id="message_box">
-   		<h3 id="write_title">
-   			답변 쪽지 보내기
-   		</h3>
+				<div class="message_info">
+					<p>중앙선거관리위원회 회원들의 자유로운 의견 교환을 위해 제공하는 서비스 입니다.<br><br>
+					아름다운 선거 문화를 위해 회원분들은 인터넷 에티켓을 준수해주시기 바랍니다.</p>
+					<div class="message_img">
+						<img src="images/messenger.png">
+					</div>
+				</div>
+		<div id="snd_message_box">
+			<div id="message_box">
+			<div class="message_menu_wrap">
+	   		<h3 id="write_title2">
+	   			답변 쪽지<br>보내기
+	   		</h3>
+	   		<ul class="top_buttons">
+				<li class="mail_snd"><span><a href="message_box.php?mode=rv">수신 쪽지함</a></span></li>	
+				<li class="mail_rcv"><span><a href="message_box.php?mode=send">송신 쪽지함</a></span></li>
+				<li class="plane"><span><a href="message_form.php">쪽지 보내기</a></span></li>
+			</ul>	
+   		</div>
 <?php
 	$num = $_GET['num'];
 
@@ -241,18 +256,19 @@
 				</li>
 				<li>
 					<span class="col1">제목 : </span>
-					<span class="col2"><input type="text" name="subject" value="<?=$subject?>"></span>
+					<span class="col2"><input type="text" name="subject" value="<?=$subject?>" class="subject"></span>
 				</li>
 				<li id="text_area">
 					<span class="col1">내용 : </span>
 					<span class="col2">
-						<textarea name="content"><?=$content?></textarea>
+						<textarea name="content" class="content"><?=$content?></textarea>
 					</span>
 				</li>
 			</ul>
 			<button type="button" onclick="check_input()">보내기</button>
 		</div>
 	</form>
+	</div>
    	</div><!-- message_box -->
 	</section>
 	<footer>

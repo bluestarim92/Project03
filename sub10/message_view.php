@@ -73,7 +73,7 @@
 											<li><a href="#">아이디찾기</a></li>
 											<li><a href="#">정보수정</a></li>
 											<li><a href="#">회원가입</a></li>
-											<li><a href="message_form.php">쪽지 보내기</a></li>
+											<li><a href="message_view.php">쪽지 보내기</a></li>
 										</ul>
 									</div>
 							</div>
@@ -183,8 +183,16 @@
 					<span class="sns_f"></span>
 					<span class="like_btn"></span>
 				</div>
-		<div id="message_box">
-   		<h3 class="title">
+		<div class="message_info">
+			<p>중앙선거관리위원회 회원들의 자유로운 의견 교환을 위해 제공하는 서비스 입니다.<br><br>
+			아름다운 선거 문화를 위해 회원분들은 인터넷 에티켓을 준수해주시기 바랍니다.</p>
+			<div class="message_img">
+				<img src="images/messenger.png">
+			</div>
+		</div>
+		<div id="snd_message_box">
+   		<div class="message_menu_wrap">
+   		<h3 id="write_title2">
 <?php
 	$mode = $_GET['mode'];
 	$num  = $_GET['num'];
@@ -212,26 +220,35 @@
 	$msg_name = $record["name"];
 
 	if($mode=="send")
-		echo "송신 쪽지함 > 내용보기";
+		echo "송신 쪽지함 <br> 내용보기";
 	else
-		echo " 수신 쪽지함 > 내용보기";
+		echo " 수신 쪽지함 <br> 내용보기";
 ?>
    		</h3>
+   		<ul class="top_buttons">
+			<li class="mail_snd"><span><a href="message_box.php?mode=rv">수신 쪽지함</a></span></li>	
+			<li class="mail_rcv"><span><a href="message_box.php?mode=send">송신 쪽지함</a></span></li>
+			<li class="plane"><span><a href="message_form.php">쪽지 보내기</a></span></li>
+		</ul>	
+   		</div>
+   		<div class="sndrcv_message">
    		<ul id="view_content">
    			<li>
-   				<span class="col1"><b>제목 :</b> <?=$subject?></span>
-   				<span class="col1"><?=$msg_name?> | <?=$regist_day?></span>
+   				<span class="mx_col1"><div class="mx_title">제목 : <?=$subject?></div></span>
+   				<span class="mx_col2"><?=$msg_name?></span>
+   				<span class="mx_col3"><?=$regist_day?></span>
    			</li>
-   			<li>
+   			<li class="sx_box" style="overflow-y:auto">
    				<?=$content?>
    			</li>
    		</ul>
-   		<ul class="buttons">
+   		<ul class="box_buttons">
    			<li><button onclick="location.href='message_box.php?mode=rv'">수신 쪽지함</button></li>
    			<li><button onclick="location.href='message_box.php?mode=send'">송신 쪽지함</button></li>
    			<li><button onclick="location.href='message_response_form.php?num=<?=$num?>'">답변 쪽지</button></li>
    			<li><button onclick="location.href='message_delete.php?num=<?=$num?>&mode=<?=$mode?>'">삭제</button></li>
    		</ul>
+   		</div>
    	</div><!-- message_box -->
 	</section>
 	<footer>
