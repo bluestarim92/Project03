@@ -7,9 +7,9 @@ img{border: 0;}
 .cf:after{content: ''; display: block; clear: both;}
 /* body{background:url(../images/nec_bg.png) no-repeat center top; height: 5000px;} */
 .fl{ float:left;}
-#bg_100{width: 100%; height: 2497px;  background: #e0f3fa; margin-top:4px;}
+#bg_100{width: 100%; height: 2903px;  background: #e0f3fa; margin-top:4px;}
 #wrapper{width: 1420px; margin : 0 auto;}
-#container{float:left; width: 1420px; height: 2444px; margin: 0 auto;}
+#container{float:left; width: 1420px; height: 2850px; margin: 0 auto;}
 h3{color: #666666;}
 
 	#top_contents{float: left; width: 1354px; height: 771px; margin-top: 34px; margin-bottom: 33px; background: #ffffff; padding: 33px;}
@@ -193,7 +193,7 @@ h3{color: #666666;}
 			.election_data > ul > li{display: block; float: left; width: 49%; line-height: 35px; padding: 0 3px 3px 0;}
 			.election_data > ul > li > a{display: block; letter-spacing: -1px; padding-left: 5px; background: #ffffff url(../images/infoLink_bullet.png) no-repeat 95% center; color: #666666; overflow: hidden; white-space: nowrap; font-weight: normal; }
 			.election_data > ul > li > a:hover{text-decoration: underline;}
-	#bot_contents{float: left; width: 1354px; height: 546px; padding: 33px; margin-bottom: 63px; background: #ffffff;}
+	#bot_contents{float: left; width: 1354px; height: 952px; padding: 33px; margin-bottom: 63px; background: #ffffff;}
 		#promotion_wrap{float:left; width: 1354px; height: 376px; position: relative; overflow: hidden; margin: 0 auto; margin-bottom: 30px;}
 		
 			.p_title{width: 322px; height: 38px; background: #323c52; color: #ffffff; text-align: center; font-size: 18px; line-height: 38px; transition:all 0s;}
@@ -243,30 +243,36 @@ h3{color: #666666;}
 			.promo_box4_content2{width: 344px; height: 376px; box-sizing: border-box; border-right: 2px solid #323c52;}
 			.promo_box4_content3{width: 344px; height: 376px; box-sizing: border-box;}
 		
-		.nec_publish{float: left; width: 322px; height: 151px; background: #ffffff; margin-right: 23px;}
+		.nec_publish{float: left; width: 322px; height: 151px; background: #ffffff; margin-right: 23px; margin-bottom: 30px;}
 			.nec_publish > a > .nec_publish_icon{float: left; display: block; width: 75px; height: 75px; background: url(../images/promotionLink_icon01.png) no-repeat; margin-left: 30px; margin-top: 38px;}
 			.nec_publish > a > span{display: block; float: right; margin-right: 120px; padding-top: 61px; font-size: 20px; color: #ffffff; font-weight: normal;}
 			.nec_publish > a > span:hover{text-decoration: underline;}
 			.nec_publish > .nec_publish_bg{display: block; width: 142px; height: 151px; padding-left: 180px; background: #69a517 url(../images/promotionLink01_bg.png) no-repeat right center;}
 			.nec_publish > .nec_publish_bg > .nec_publish_arrow{display: block; width: 26px; height: 26px; background: url(../images/promotionLink_arrow.png) no-repeat right center; padding-left: 80px; padding-top : 123px;}
-		.nec_infographic{float: left; width: 322px; height: 151px; background: #ffffff; margin-right: 22px;}
+		.nec_infographic{float: left; width: 322px; height: 151px; background: #ffffff; margin-right: 22px;  margin-bottom: 30px;}
 			.nec_infographic > a > .nec_infographic_icon{float: left; display: block; width: 75px; height: 75px; background: url(../images/promotionLink_icon02.png) no-repeat; margin-left: 30px; margin-top: 38px;}
 			.nec_infographic > a > span{display: block; float: right; margin-right: 90px; padding-top: 61px; font-size: 20px; color: #ffffff; font-weight: normal;}
 			.nec_infographic > a > span:hover{text-decoration: underline;}
 			.nec_infographic > .nec_infographic_bg{display: block; width: 142px; height: 151px; padding-left: 180px; background: #a68e63;}
 			.nec_infographic > .nec_infographic_bg > .nec_infographic_arrow{display: block; width: 26px; height: 26px; background: url(../images/promotionLink_arrow.png) no-repeat right center; padding-left: 80px; padding-top : 123px;}
-		.nec_image{float: left; width: 322px; height: 151px; background: rgba(25, 25,25, 0.5); margin-right: 20px;}
+		.nec_image{float: left; width: 322px; height: 151px; background: rgba(25, 25,25, 0.5); margin-right: 20px;  margin-bottom: 30px;}
 			.nec_image > a > .nec_image_icon{float: left; display: block; width: 75px; height: 75px; background: url(../images/promotionLink_icon03.png) no-repeat; margin-left: 30px; margin-top: 38px;}
 			.nec_image > a > span{display: block; float: right; margin-right: 115px; padding-top: 61px; font-size: 20px; color: #ffffff; font-weight: normal;}
 			.nec_image > a > span:hover{text-decoration: underline;}
 			.nec_image > .nec_image_bg{display: block; width: 142px; height: 151px; padding-left: 180px; background: #1ea59a url(../images/promotionLink03_bg.png) no-repeat right center;}
 			.nec_image > .nec_image_bg > .nec_image_arrow{display: block; width: 26px; height: 26px; background: url(../images/promotionLink_arrow.png) no-repeat right center; padding-left: 80px; padding-top : 123px;}
-		.nec_issue{float: left; width: 322px; height: 151px; background: rgba(25, 25,25, 0.5);}
+		.nec_issue{float: left; width: 322px; height: 151px; background: rgba(25, 25,25, 0.5);  margin-bottom: 30px;}
 			.nec_issue > a > .nec_issue_icon{float: left; display: block; width: 75px; height: 75px; background: url(../images/promotionLink_icon04.png) no-repeat; margin-left: 30px; margin-top: 38px;}
 			.nec_issue > a > span{display: block; float: right; margin-right: 115px; padding-top: 61px; font-size: 20px; color: #ffffff; font-weight: normal;}
 			.nec_issue > a > span:hover{text-decoration: underline;}
 			.nec_issue > .nec_issue_bg{display: block; width: 142px; height: 151px; padding-left: 180px; background: #8c919e;}
 			.nec_issue > .nec_issue_bg > .nec_issue_arrow{display: block; width: 26px; height: 26px; background: url(../images/promotionLink_arrow.png) no-repeat right center; padding-left: 80px; padding-top : 123px;}
+			
+		.auth_elec{float: left; margin-right:  22px; width:  667px; height:  376px;}
+
+		.rank_p{float: left; width:  664px; height:  376px;}
+
+
 			
 	#sec_ctrl_bar{position: fixed; top: 50%; right: 0; margin-top: -90px; width: 85px;}
 		#sec_ctrl_bar li a{display: block; box-sizing:border-box; width: 85px; height: 90px; padding-top: 45px; z-index:2;}
@@ -278,4 +284,5 @@ h3{color: #666666;}
 	.quick_menu{position: fixed; top: 45%; left: 0px; background: #f3fbff; box-shadow: 0 0 6px #777777; z-index: 1000;}
 	
 	#pop_wrap{position: absolute; top: 220px; left: 100px; z-index: 99999999; display: none; box-shadow: 0 0 4px #555555;}
-		
+				}
+		}

@@ -29,9 +29,7 @@ li{margin-left:  20px; color:  #666666; font-size:  14px; margin-top:  10px;}
 <h3>아이디 중복체크</h3>
 <p>
 <?php
-	define('DBuser', 'bluestarim92');
-	define('DBpass', 'ay2111!!');
-	define('DBname', 'bluestarim92');
+	include "../define.php";
 
 	$id = $_GET['id'];
 

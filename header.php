@@ -1,8 +1,5 @@
 <?php
-	define('DBuser', 'bluestarim92');
-	define('DBpass', 'ay2111!!');
-	define('DBname', 'bluestarim92');
-
+	include "define.php";
 	session_start();
 	if(isset($_SESSION['userid'])) $userid = $_SESSION['userid'];
 	else $userid = "";

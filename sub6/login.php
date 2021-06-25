@@ -1,8 +1,6 @@
 <meta charset="utf-8">
 <?php
-	define('DBuser', 'bluestarim92');
-	define('DBpass', 'ay2111!!');
-	define('DBname', 'bluestarim92');
+	include "../define.php";
 
 	$id = $_POST['id'];
 	$pass = $_POST['pass'];

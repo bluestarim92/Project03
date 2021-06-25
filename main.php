@@ -570,6 +570,70 @@ allowfullscreen></iframe>
 					</div>
 				</a>
 			</div>
+			<div class="auth_elec">
+                <ul>
+                <h4><a href='sub11/board_form.php'>투표 인증 게시판</a></h4>
+<!-- 최근 게시 글 DB에서 불러오기 -->
+<?php
+    $con = mysqli_connect("localhost", DBuser, DBpass, DBname);
+    $sql = "select * from board order by num desc limit 5";
+    $result = mysqli_query($con, $sql);
+
+    if (!$result)
+        echo "게시판 DB 테이블(board)이 생성 전이거나 아직 게시글이 없습니다!";
+    else
+    {
+        while( $row = mysqli_fetch_array($result) )
+        {
+            $regist_day = substr($row["regist_day"], 0, 10);
+?>
+                    <li>
+                        <span><?=$row["subject"]?></span>
+                        <span><?=$row["name"]?></span>
+                        <span><?=$regist_day?></span>
+                    </li>
+<?php
+        }
+    }
+?>
+                </ul>
+            </div>
+			
+			<div class="rank_p">
+                <ul>
+<!-- 포인트 랭킹 표시하기 -->
+<?php
+    $rank = 1;
+    $sql = "select * from members order by point desc limit 5";
+    $result = mysqli_query($con, $sql);
+
+    if (!$result)
+        echo "회원 DB 테이블(members)이 생성 전이거나 아직 가입된 회원이 없습니다!";
+    else
+    {
+        while( $row = mysqli_fetch_array($result) )
+        {
+            $name  = $row["name"];        
+            $id    = $row["id"];
+            $point = $row["point"];
+            $name = mb_substr($name, 0, 1)." * ".mb_substr($name, 2, 1);
+?>
+	                <li>
+	                    <span><?=$rank?></span>
+	                    <span><?=$name?></span>
+	                    <span><?=$id?></span>
+	                    <span><?=$point?></span>
+	                </li>
+<?php
+            $rank++;
+        }
+    }
+
+    mysqli_close($con);
+?>
+                </ul>
+			</div>
+			</div>
 		</div>
 		</div>
 	</div>
@@ -595,7 +659,7 @@ allowfullscreen></iframe>
 		</li>
 	</ul>
 	<p id="pop_wrap">
-		<img src="images/popup.png" alt="컬리를 가장 쉽고 편하게 이용하는 방법" usemap="#pop" />
+		<img src="images/popup.png" alt="21대 대선 홍보 팝업" usemap="#pop" />
 		<map name="pop" id="pop">
 			<area shape="rect" coords="322,397,359,413" href="창닫기" alt="창닫기"/>
 			<area shape="rect" coords="161,396,289,418" href="하루동안창닫기" alt="하루동안창닫기"/>
