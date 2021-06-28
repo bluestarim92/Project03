@@ -1,0 +1,102 @@
+*{margin:0; padding:0;}
+a{color: #666666;}
+/* body{background:url(../images/nec_login.png) no-repeat center top; height: 5000px;} */
+#wrapper{width: 100%; height: 1620px; background: #e0f3fa; margin-top:4px;}
+#container{margin: 0 auto; width: 1420px; height: 1529px; text-align: justify; padding-top : 18px;}
+	.asidewrap{display:block; float: left; width: 298px; height: 1252px; margin : 38px 10px 0px 33px;}
+		.aside1{display:block; float:left; width: 298px; height: auto;  background: #ffffff; margin-bottom:8px; overflow: hidden; position: relative;}
+		.aside1 .aside1_subj{padding: 25px 30px; background: #008d96 url(../../images/bg_lnbTit.png) no-repeat 35px bottom; font-size: 2.1em; color: #ffffff; font-weight: bold; letter-spacing: -1px;}
+		.aside1 .sidewrap{width: 100%; height: auto;}
+		.aside1 .sidewrap .sidemenu{width: 100%; height: auto;}
+		.aside1 .sidewrap .sidemenu .title{width: 280px; height: 60px; display: block; font-size: 1.1em; line-height: 60px; padding-left: 18px; color: #666666; border-bottom: 1px solid #dddddd;}
+		.aside1 .sidewrap .sidemenu .subsidemenu{display: none; overflow: hidden; height: auto; transition: all 1s;}
+		.aside1 .sidewrap .sidemenu.on span{color: #ffffff; background: #537c8e;}
+		.aside1 .sidewrap .sidemenu.on .subsidemenu{display: block;}
+		.aside1 .sidewrap .sidemenu .subsidemenu .sidecontent{padding: 10px 20px; box-sizing: border-box; padding: 10px 20px; width: 100%; height: 100%; background: #fcfcfc; overflow: hidden; transition: all 0.6s; border-top: 1px solid #dddddd;}
+		.aside1 .sidewrap .sidemenu .subsidemenu .sidecontent li{line-height: 25px; font-size: 1em;}
+		.aside1 .sidewrap .sidemenu .subsidemenu .sidecontent li.on a{color: #071739; font-weight: bold;}
+		.aside1 .sidewrap .sidemenu .subsidemenu .sidecontent li a{color: #666666;}
+		
+		.aside2{display: block; background: #ffffff; float:left; width: 274px; height: 213px; margin-bottom:10px; padding: 12px;}
+		.aside2 h3{text-align: left; font-size: 14px; margin-bottom: 12px;}
+		
+
+		.tab{overflow: hidden;}
+		.aside2>.tab_wrap>.tab> ul li{float: left; width: 130px; height: 30px; line-height: 30px; border: 1px solid #999999; background: #f5f6fa; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; text-align: center; font-weight: normal; margin-bottom: 20px;}
+		
+		.aside2>.tab_wrap>.tab> ul li a.active{color: #ed63ac; text-decoration: underline; font-weight: bold;}
+		
+		.aside2 .tab_content ul li a{float: left; display: block; width: 260px; font-size: 0.9em; text-align: left; color: #666666; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; letter-spacing: -1px; line-height: 2.1;}
+		.aside2 .tab_content ul li a:hover{text-decoration: underline;}
+		.aside2 .tab_content ul li a .bullet_num{display: block; width: 11px; height: 11px; padding: 1px; font-size: 0.8em; line-height: 1.1; margin-right: 8px; margin-top: 6px; border-radius: 1px; color: #ffffff; background: #333333; text-align: center; float:left;}
+		.aside2 .tab_content ul li a .bullet_num_pink{display: block; width: 11px; height: 11px; padding: 1px; font-size: 0.8em; line-height: 1.1; margin-right: 8px; margin-top: 6px; border-radius: 1px; color: #ffffff; background: #ed63ac; text-align: center; float:left;}
+		
+		.aside3{display: block; background: #ffffff; float:left; width: 282px; height: 319px; margin-bottom:8px; padding: 8px;}
+		.aside3 h3{font-size: 22px; text-align: center; margin-bottom: 15px;}
+		.aside3 ul li{display: block; height: 38px; background: #e2e4e9 url(../../images/bullet.png) no-repeat 8px 20px; padding-left: 15px; margin-bottom: 5px; line-height: 40px; font-weight: normal;}
+		.aside3 ul li a:hover{text-decoration: underline;}
+		
+		.aside3{display: block; background: #ffffff; float:left; width: 282px; height: 319px; margin-bottom:8px; padding: 8px;}
+		.aside3 h3{font-size: 22px; text-align: center; margin-bottom: 15px;}
+		.aside3 ul li{display: block; height: 38px; background: #e2e4e9 url(../../images/bullet.png) no-repeat 8px 20px; padding-left: 15px; margin-bottom: 5px; line-height: 40px; font-weight: normal;}
+		.aside3 ul li a:hover{text-decoration: underline;}
+	.article1{display: block; float:right; width: 1044px; height: 1400px; margin-right: 32px; margin-top: 38px; background: #ffffff;}
+	.menulog{display:block; width: 990px; height: 25px; border-bottom: 2px solid #444444; margin: 0 auto; padding-top: 20px; margin-bottom: 20px;}
+			.homeicon{display: block; width: 24px; height: 24px;  float:left; background:url(../../images/bu_home.gif)  no-repeat center left; cursor: pointer;}
+				.location{font-size:0.8em; color: #666666;}
+				.print_btn{display:block; float:right; width: 24px; height: 24px; background: url(../../images/print.gif) no-repeat center right; cursor:pointer;}
+				.sns_f{display:block; float:right; width: 24px; height: 24px; background: url(../../images/sns_facebook.gif) no-repeat center right; cursor:pointer; margin-left: 5px;}
+				.sns_k{display:block; float:right; width: 24px; height: 24px; background: url(../../images/sns_kakao.gif) no-repeat center right; cursor:pointer;}
+				.sns_t{display:block; float:right; width: 24px; height: 24px; background: url(../../images/sns_twitter.gif) no-repeat center right; cursor:pointer;}
+				.sns_n{display:block; float:right; width: 24px; height: 24px; background: url(../../images/sns_blog.gif) no-repeat center right; cursor:pointer; margin-right: 5px;}
+				.like_btn{display:block; float: right; width: 70px; height: 24px; background:url(../../images/sns_good.gif) no-repeat right center; cursor:pointer;}
+				.sns_f{display:block; float:right; width: 24px; height: 24px; background: url(../../images/sns_facebook.gif) no-repeat center right; cursor:pointer;}
+	.article1 > h4{float: left; width: 100%; background: url(../../images/bu_tit1.gif) no-repeat left 2px; margin-top: 10px; margin-bottom: 10px; float: left; padding-left: 10px; margin-left: 27px;}
+
+	.message_info{float:  left; width:  880px; height: 70px; padding:  10px; margin-left: 190px;}
+	.message_info p{float:  left; padding-left:  10px; margin-bottom:  10px; font-size:  16px; color:  #555555;}
+	.message_info .message_img{float:  left; padding-left:  30px;}
+
+	.board_box{float: left; width: 880px; height: 440px; border: 1px solid #999999; border-top: 2px solid #333333; margin-left: 84px;}
+	#snd_message_box{float: left; width: 880px; height: 440px; border: 1px solid #999999; border-top: 2px solid #333333; margin-left: 84px;}
+	
+	.id{margin-bottom:  70px;}
+	.pwd{position:  absolute; left:  805px; top:  360px;}
+
+	.message_menu_wrap{float:  left; width: 200px; box-sizing:  border-box; border-right:  1px solid #dddddd; height:  440px; padding:  20px;}
+	
+	
+	.top_buttons > li {margin-bottom:  25px; padding-left: 40px; font-size:  16px;}
+	.top_buttons > li.active a{color:  #648cff; filter: drop-shadow(.5rem .5rem 1rem #90caf9);}
+	
+	
+		/* 관리자 회원 목록보기(admin_list.php) */
+	.admin_box { width: 800px; margin: 0 auto;}
+	#admin_box h3#member_title { margin: 30px 0 10px 0;}
+	#member_list { margin: 10px 0 30px 0;}
+	#member_list li:nth-child(1) { font-weight: bold; border-top: solid 2px #dddddd; border-bottom: solid 2px #dddddd; background-color: #eeeeee;}
+	#member_list li { padding: 10px 0; border-bottom: solid 1px #dddddd; }
+	#member_list span { display: inline-block; text-align: center;}
+	#member_list input { width: 40px; height: 20px; text-align: center;}
+	#member_list button { padding: 3px 10px;}
+	#member_list .col1 { width: 80px; }
+	#member_list .col2 { width: 100px; }
+	#member_list .col3 { width: 80px; }
+	#member_list .col4 { width: 80px; }
+	#member_list .col5 { width: 80px; }
+	#member_list .col6 { width: 170px; }
+	#member_list .col7 { width: 70px; }
+	#member_list .col8 { width: 70px; }
+	#admin_box h3#board_title { margin: 30px 0 10px 0;}
+	#board_list { margin: 10px 0 50px 0;}
+	#board_list .col1 { width: 50px; }
+	#board_list .col2 { width: 60px; }
+	#board_list .col3 { width: 80px; }
+	#board_list .col4 { width: 340px; text-align: left}
+	#board_list .col5 { width: 120px; }
+	#board_list .col6 { width: 120px; }
+	#board_list li.title { font-weight: bold; border-top: solid 2px #dddddd; border-bottom: solid 2px #dddddd; background-color: #eeeeee; }
+	#board_list li.title span.col4 { text-align: center; }
+	#board_list li { padding: 10px 0; border-bottom: solid 1px #dddddd; }
+	#board_list span { display: inline-block; text-align: center; }
+	#board_list button { margin: 20px 0 0 20px; padding: 5px 10px;}

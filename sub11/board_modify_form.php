@@ -220,9 +220,11 @@
 			</div>
 		</div>
 		<div class="board_box">
-			<h3 id="write_title">
-				게시판 글 수정하기
-			</h3>
+			<div class="board_menu_wrap">
+				<h3 id="write_title">
+					게시판 글 수정하기
+				</h3>
+			</div>
 			<?php
 		$num = $_GET["num"];
 		$page = $_GET["page"];
@@ -236,32 +238,34 @@
 		$content = $row["content"];
 		$file_name = $row["file_name"];
 	?>
-		<form  name="board_form" method="post" action="board_modify.php?num=<?=$num?>&page=<?=$page?>" enctype="multipart/form-data">
-			<ul id="board_form">
-				<li>
-					<span class="col1">이름 : </span>
-					<span class="col2"><?=$name?></span>
-				</li>		
-				<li>
-					<span class="col1">제목 : </span>
-					<span class="col2"><input name="subject" type="text" value="<?=$subject?>"></span>
-				</li>	    	
-				<li id="text_area">	
-					<span class="col1">내용 : </span>
-					<span class="col2">
-					<textarea name="content"><?=$content?></textarea>
-					</span>
-				</li>
-				<li>
-					<span class="col1"> 첨부 파일</span>
-					<span class="col2"><?=$file_name?></span>
-				</li>
-			</ul>
-			<ul class="buttons">
-				<li><button type="button" onclick="check_input()">수정하기</button></li>
-				<li><button type="button" onclick="location.href='board_list.php'">목록</button></li>
-			</ul>
-		</form>
+			<div class="board_content_wrap">
+				<form  name="board_form" method="post" action="board_modify.php?num=<?=$num?>&page=<?=$page?>" enctype="multipart/form-data">
+					<ul id="board_form">
+						<li>
+							<span class="col1">이름 : </span>
+							<span class="col2 name"><?=$name?></span>
+						</li>		
+						<li>
+							<span class="col1">제목 : </span>
+							<span class="col2"><input class="subject" name="subject" type="text" value="<?=$subject?>"></span>
+						</li>	    	
+						<li id="text_area">	
+							<span class="col1">내용 : </span>
+							<span class="col2">
+							<textarea name="content"><?=$content?></textarea>
+							</span>
+						</li>
+						<li>
+							<span class="col1"> 첨부 파일</span>
+							<span class="col2"><?=$file_name?></span>
+						</li>
+					</ul>
+					<ul class="buttons">
+						<li><button type="button" onclick="check_input()">수정하기</button></li>
+						<li><button type="button" onclick="location.href='board_list.php'">목록</button></li>
+					</ul>
+				</form>
+			</div>
 		</div><!--board_box -->
 	</section>
 	<footer>

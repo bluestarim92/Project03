@@ -191,9 +191,11 @@
 			</div>
 		</div>
 		<div class="board_box">
-			<h3 id="write_title">
-				게시판 내용보기
-			</h3>
+			<div class="board_menu_wrap">
+				<h3 id="write_title">
+					게시판 내용보기
+				</h3>
+			</div>
 <?php
 	$num = $_GET['num'];
 	$page = $_GET['page'];
@@ -220,16 +222,18 @@
 	$sql = "update board set hit = $new_hit where num=$num";
 	mysqli_query($con, $sql);
 ?>
+		<div class="board_content_wrap">
 			<ul id="view_content">
 				<li>
-					<span class="col1"><b>제목 :</b><?=$subject?></span>
-					<span class="col2"><?=$name?> | <?=$regist_day?></span>
+					<span class="mx_col1"><b>제목 :</b><?=$subject?></span>
+					<span class="mx_col2"><?=$name?></span>
+					<span class="mx_col3"><?=$regist_day?></span>
 				</li>
-				<li>
+				<li class="board_content">
 					<?php
 						if($file_name){
 							$real_name = $file_copied;
-							$file_path = "./data/".$real_name;
+							$file_path = "data/".$real_name;
 							$file_size = filesize($file_path);
 
 							echo "▷ 첨부파일 : $file_name ($file_size Byte) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -239,12 +243,13 @@
 					<?=$content?>
 				</li>
 			</ul>
-			<ul class="buttons">
+			<ul class="buttons_list">
 				<li><button onclick="location.href='board_list.php?page=<?=$page?>'">목록</button></li>
 				<li><button onclick="location.href='board_modify_form.php?num=<?=$num?>&page=<?=$page?>'">수정</button></li>
 				<li><button onclick="location.href='board_delete.php?num=<?=$num?>&page=<?=$page?>'">삭제</button></li>
 				<li><button onclick="location.href='board_form.php'">글쓰기</button></li>
 			</ul>
+		</div>
 		</div><!--board_box -->
 	</section>
 	<footer>
