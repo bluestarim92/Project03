@@ -317,10 +317,18 @@
 				    }
 				 ?>
 				  </tr>
-				  <?php } ?>
+				  <?php }
+
+				  	$category = $_GET['ctg'];
+				  	$search_con = $_GET['search'];
+
+
+
+				  ?>
 				</table>
 			</div>
 			<div class="board_content_wrap">
+				<h3><?php echo $category; ?>에서 '<?php echo $search_con; ?>'검색결과</h3>
 				<ul id="board_list">
 					<li>
 						<span class="mb_col1">번호</span>
@@ -331,17 +339,17 @@
 						<span class="mb_col6">조회</span>
 					</li>
 				</ul>
-			<?php
+
+<?php
 	if (isset($_GET["page"]))
 		$page = $_GET["page"];
 	else
 		$page = 1;
 
 	$con = mysqli_connect("localhost", DBuser, DBpass, DBname);
-	$sql = "select * from board order by num desc";
+	$sql = "select * from board where $category like '%$search_con%' order by num desc";
 	$result = mysqli_query($con, $sql);
 	$total_record = mysqli_num_rows($result); // 전체 글 수
-
 	$scale = 10;
 
 	// 전체 페이지 수($total_page) 계산 
@@ -420,7 +428,7 @@
 			<div class="search_bar">
 				<form action="board_search.php" method="get">
 					<select name="ctg">
-						<option value="subject">제목</option>
+						<option value="title">제목</option>
 						<option value="name">글쓴이</option>
 						<option value="content">내용</option>
 					</select>

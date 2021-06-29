@@ -63,7 +63,7 @@ a{color: #666666;}
 	.id{margin-bottom:  70px;}
 	.pwd{position:  absolute; left:  805px; top:  360px;}
 
-	.board_menu_wrap{float:  left; width: 200px; box-sizing:  border-box; border-right:  1px solid #dddddd; height:  440px; padding:  20px;}
+	.board_menu_wrap{float:  left; width: 250px; box-sizing:  border-box; border-right:  1px solid #dddddd; height:  440px; padding:  10px;}
 	
 	#write_title{width:  140px; height:  40px; font-size:  1.6em; color:  #537c8e; background: #ffffff; line-height: 40px; text-align: center; margin: 50px auto 40px auto;}
 	
@@ -75,7 +75,7 @@ a{color: #666666;}
 	.mail_rcv{background: url(../images/mail_rcv.png) left center no-repeat;}
 	.plane{background: url(../images/throw_plane.png) left center no-repeat;}
 	
-	.board_content_wrap{box-sizing: border-box; width: 680px; height:  440px; float: left; padding:  40px; }
+	.board_content_wrap{box-sizing: border-box; width: 630px; height:  440px; float: left; padding:  15px; }
 	
 	
 	#board_form  li{margin-bottom:  15px;}
@@ -122,3 +122,12 @@ a{color: #666666;}
 	.buttons_list >li {float: left; margin-right:  10px; margin-top:  -10px;}
 	.buttons >li > button {cursor:  pointer;width:  90px; height:  36px; border: none; background: #537c8e; color:  #ffffff; border-radius: 5px; font-weight: bold; line-height: 36px;}
 	.buttons_list >li > button {cursor:  pointer;width:  90px; height:  36px; border: none; background: #537c8e; color:  #ffffff; border-radius: 5px; font-weight: bold; line-height: 36px;}
+
+	button.holy {border : 0; background : #ffffff;}
+	button.holy span{font-family: tahoma;font-size: 16px;color: #FF6C21;}
+	button.blue {border : 0; background : #ffffff;}
+	button.blue span{font-family: tahoma;font-size: 16px;color: #0000FF;}
+    button.black {border : 0; background : #ffffff;}
+    button.black span {font-family: tahoma; font-size: 16px;color: #000000;}
+    tr>th{width: 31px;}
+    tr>td>font{line-height: 30px; padding-left:  3px;}

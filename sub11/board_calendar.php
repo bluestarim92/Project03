@@ -301,9 +301,15 @@
 				            // 12. 오늘 날짜면 굵은 글씨
 				            if ($year == $thisyear && $month == $thismonth && $day == date("j")) {
 				                // 13. 날짜 출력
-				                echo '<button class='.$style.'>';
-				                echo '<span style="font-weight:bold">'.$day.'</span>';
-				                echo '</button>';
+	                		// echo '<button class='.$style.'>';
+			                // echo '<span style="font-weight:bold">'.$day.'</span>';
+			                // echo '</button>';
+	                ?>
+	                	<form action="board_calender.php" method="get">
+	                		<button name="watday" onclick="location.href='board_calender'"></button>
+	                	</form>
+	               <?php 
+
 				                
 				            } else {
 				                echo '<button class='.$style.'>';
@@ -338,7 +344,7 @@
 		$page = 1;
 
 	$con = mysqli_connect("localhost", DBuser, DBpass, DBname);
-	$sql = "select * from board order by num desc";
+	$sql = "select * from board where  order by num desc";
 	$result = mysqli_query($con, $sql);
 	$total_record = mysqli_num_rows($result); // 전체 글 수
 
