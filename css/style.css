@@ -7,9 +7,9 @@ img{border: 0;}
 .cf:after{content: ''; display: block; clear: both;}
 /* body{background:url(../images/nec_bg.png) no-repeat center top; height: 5000px;} */
 .fl{ float:left;}
-#bg_100{width: 100%; height: 2903px;  background: #e0f3fa; margin-top:4px;}
+#bg_100{width: 100%; height: 2803px;  background: #e0f3fa; margin-top:4px;}
 #wrapper{width: 1420px; margin : 0 auto;}
-#container{float:left; width: 1420px; height: 2850px; margin: 0 auto;}
+#container{float:left; width: 1420px; height: 2750px; margin: 0 auto;}
 h3{color: #666666;}
 
 	#top_contents{float: left; width: 1354px; height: 771px; margin-top: 34px; margin-bottom: 33px; background: #ffffff; padding: 33px;}
@@ -193,7 +193,8 @@ h3{color: #666666;}
 			.election_data > ul > li{display: block; float: left; width: 49%; line-height: 35px; padding: 0 3px 3px 0;}
 			.election_data > ul > li > a{display: block; letter-spacing: -1px; padding-left: 5px; background: #ffffff url(../images/infoLink_bullet.png) no-repeat 95% center; color: #666666; overflow: hidden; white-space: nowrap; font-weight: normal; }
 			.election_data > ul > li > a:hover{text-decoration: underline;}
-	#bot_contents{float: left; width: 1354px; height: 952px; padding: 33px; margin-bottom: 63px; background: #ffffff;}
+
+	#bot_contents{float: left; width: 1354px; height: 852px; padding: 33px; margin-bottom: 63px; background: #ffffff;}
 		#promotion_wrap{float:left; width: 1354px; height: 376px; position: relative; overflow: hidden; margin: 0 auto; margin-bottom: 30px;}
 		
 			.p_title{width: 322px; height: 38px; background: #323c52; color: #ffffff; text-align: center; font-size: 18px; line-height: 38px; transition:all 0s;}
@@ -268,11 +269,29 @@ h3{color: #666666;}
 			.nec_issue > .nec_issue_bg{display: block; width: 142px; height: 151px; padding-left: 180px; background: #8c919e;}
 			.nec_issue > .nec_issue_bg > .nec_issue_arrow{display: block; width: 26px; height: 26px; background: url(../images/promotionLink_arrow.png) no-repeat right center; padding-left: 80px; padding-top : 123px;}
 			
-		.auth_elec{float: left; margin-right:  22px; width:  667px; height:  376px;}
+		.auth_elec{float: left; margin-right:  22px; width:  667px; height:  276px;  box-sizing:  border-box;}
+		.auth_elec>h4{float:  left; width:  100%; height:  36px; border-bottom: 1px solid #efefef;}
+		.auth_elec .elec_more{float: right;}
+		.auth_elec>h4>a{display:  block; float:  left; width:  140px; height: 32px; color: #666666; font-size: 18px; line-height: 32px; border-bottom: 4px solid #647ec3;}
+		.auth_elec>h4>.elec_more{float: right; margin-top:  8px;}
+		.auth_elec>ul{padding: 22px;}
+		.auth_elec>ul>li{background: url(../images/bullet.png) no-repeat 12px 31px; color:  #666666; line-height:  2.1; height:  33.6px;}
+		.auth_elec>ul>li>span{font-size:  16px;}
+		.auth_elec>ul>li>span.col1{float:  left;padding-left: 20px; width:  400px; display: block;}
+		.auth_elec>ul>li>span.col2{display:  block; width:  80px; float: left;}
+		.auth_elec>ul>li>span.col3{display: block; width: 100px; float: left;}
 
-		.rank_p{float: left; width:  664px; height:  376px;}
 
-
+		.rank_p{float: left; width:  664px; height:  276px; box-sizing:  border-box;}
+		.rank_p>h4{float:  left; width:  100%; height:  36px; border-bottom: 1px solid #efefef;}
+		.rank_p>h4>a{display:  block; float:  left; width:  140px; height: 32px; color: #666666; font-size: 18px; line-height: 32px; border-bottom: 4px solid #647ec3;}
+		.rank_p>ul{padding: 22px; width:  550px;}
+		.rank_p>ul>li{color:  #666666; line-height:  2.1; height:  33.6px;}
+		.rank_p>ul>li>span{font-size:  16px;}
+		.rank_p>ul>li>span.col1{float:  left;padding-left: 20px; width:  50px; display: block;}
+		.rank_p>ul>li>span.col2{display:  block; width:  150px; float: left;}
+		.rank_p>ul>li>span.col3{display: block; width: 200px; float: left;}
+		.rank_p>ul>li>span.col4{display: block; width: 100px; float: left;}
 			
 	#sec_ctrl_bar{position: fixed; top: 50%; right: 0; margin-top: -90px; width: 85px;}
 		#sec_ctrl_bar li a{display: block; box-sizing:border-box; width: 85px; height: 90px; padding-top: 45px; z-index:2;}
@@ -284,5 +303,4 @@ h3{color: #666666;}
 	.quick_menu{position: fixed; top: 45%; left: 0px; background: #f3fbff; box-shadow: 0 0 6px #777777; z-index: 1000;}
 	
 	#pop_wrap{position: absolute; top: 220px; left: 100px; z-index: 99999999; display: none; box-shadow: 0 0 4px #555555;}
-				}
-		}
+

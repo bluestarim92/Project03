@@ -571,8 +571,13 @@ allowfullscreen></iframe>
 				</a>
 			</div>
 			<div class="auth_elec">
+				<h4>
+					<a href='sub11/board_list.php'>투표 인증 게시판</a>
+					<div class="elec_more">
+						<a href="sub11/board_list.php"><img src="images/more.png" alt="더보기"/></a>
+					</div>
+				</h4>
                 <ul>
-                <h4><a href='sub11/board_form.php'>투표 인증 게시판</a></h4>
 <!-- 최근 게시 글 DB에서 불러오기 -->
 <?php
     $con = mysqli_connect("localhost", DBuser, DBpass, DBname);
@@ -588,9 +593,9 @@ allowfullscreen></iframe>
             $regist_day = substr($row["regist_day"], 0, 10);
 ?>
                     <li>
-                        <span><?=$row["subject"]?></span>
-                        <span><?=$row["name"]?></span>
-                        <span><?=$regist_day?></span>
+                        <span class="col1"><?=$row["subject"]?></span>
+                        <span class="col2"><?=$row["name"]?></span>
+                        <span class="col3"><?=$regist_day?></span>
                     </li>
 <?php
         }
@@ -600,6 +605,7 @@ allowfullscreen></iframe>
             </div>
 			
 			<div class="rank_p">
+				<h4><a href="#">회원 랭킹 포인트</a></h4>
                 <ul>
 <!-- 포인트 랭킹 표시하기 -->
 <?php
@@ -619,10 +625,10 @@ allowfullscreen></iframe>
             $name = mb_substr($name, 0, 1)." * ".mb_substr($name, 2, 1);
 ?>
 	                <li>
-	                    <span><?=$rank?></span>
-	                    <span><?=$name?></span>
-	                    <span><?=$id?></span>
-	                    <span><?=$point?></span>
+	                    <span class="col1"><?=$rank?></span>
+	                    <span class="col2"><?=$name?></span>
+	                    <span class="col3"><?=$id?></span>
+	                    <span class="col4 cf"><?=$point?></span>
 	                </li>
 <?php
             $rank++;
