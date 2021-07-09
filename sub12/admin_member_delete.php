@@ -18,7 +18,7 @@
 
 	$num = $_GET['num'];
 
-	$con = mysqli_connect('localhost', DBuser, DBpass, DBname);
+	$con = mysqli_connect(DBhost, DBuser, DBpass, DBname);
 	$sql = "delete from members where num = $num";
 	mysqli_query($con, $sql);
 

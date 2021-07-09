@@ -5,7 +5,7 @@
 	$id = $_POST['id'];
 	$pass = $_POST['pass'];
 
-	$con = mysqli_connect('localhost', DBuser, DBpass, DBname);
+	$con = mysqli_connect(DBhost, DBuser, DBpass, DBname);
 	$sql = "select * from members where id='$id'";
 	$result = mysqli_query($con, $sql);
 

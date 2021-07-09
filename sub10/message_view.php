@@ -197,7 +197,7 @@
 	$mode = $_GET['mode'];
 	$num  = $_GET['num'];
 
-	$con = mysqli_connect("localhost", DBuser, DBpass, DBname);
+	$con = mysqli_connect(DBhost, DBuser, DBpass, DBname);
 	$sql = "select * from message where num=$num";
 	$result = mysqli_query($con, $sql);
 

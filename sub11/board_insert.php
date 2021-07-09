@@ -74,7 +74,7 @@
 		$copied_file_name = "";
 	}
 	
-	$con = mysqli_connect("localhost", DBuser, DBpass, DBname);
+	$con = mysqli_connect(DBhost, DBuser, DBpass, DBname);
 
 	$sql = "insert into board (id, name, subject, content, regist_day, hit,  file_name, file_type, file_copied) ";
 	$sql .= "values('$userid', '$username', '$subject', '$content', '$regist_day', 0, ";

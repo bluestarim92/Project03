@@ -6,7 +6,7 @@
 	$num = $_GET['num'];
 	$mode = $_GET['mode'];
 
-	$con = mysqli_connect("localhost", DBuser, DBpass, DBname);
+	$con = mysqli_connect(DBhost, DBuser, DBpass, DBname);
 	$sql = "delete from message where num=$num";
 	mysqli_query($con, $sql);
 

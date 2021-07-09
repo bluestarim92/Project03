@@ -241,7 +241,7 @@
 				<span class="mb_col4">등록일</span>
 			</li>
 <?php
-	$con = mysqli_connect("localhost", DBuser, DBpass, DBname);
+	$con = mysqli_connect(DBhost, DBuser, DBpass, DBname);
 
 	if ($mode=="send")
 		$sql = "select * from message where send_id='$userid' order by num desc";

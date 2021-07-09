@@ -580,7 +580,7 @@ allowfullscreen></iframe>
                 <ul>
 <!-- 최근 게시 글 DB에서 불러오기 -->
 <?php
-    $con = mysqli_connect("localhost", DBuser, DBpass, DBname);
+    $con = mysqli_connect(DBhost, DBuser, DBpass, DBname);
     $sql = "select * from board order by num desc limit 5";
     $result = mysqli_query($con, $sql);
 

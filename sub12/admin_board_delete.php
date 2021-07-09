@@ -26,7 +26,7 @@
 			</script>
 		");
 
-	$con = mysqli_connect('localhost', DBuser, DBpass, DBname);	
+	$con = mysqli_connect(DBhost, DBuser, DBpass, DBname);	
 	
 	for($i=0; $i<count($_POST['item']); $i++){
 		$num = $_POST['item'][$i];

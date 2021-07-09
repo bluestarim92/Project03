@@ -10,7 +10,7 @@
 
     $email = $email1."@".$email2;
           
-    $con = mysqli_connect("localhost", DBuser, DBpass, DBname);
+    $con = mysqli_connect(DBhost, DBuser, DBpass, DBname);
     $sql = "update members set pass='$pass', name='$name' , email='$email'";
     $sql .= " where id='$id'";
     mysqli_query($con, $sql);

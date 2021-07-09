@@ -7,7 +7,7 @@
 	$subject = $_POST['subject'];
 	$content = $_POST['content'];
 
-	$con = mysqli_connect('localhost', DBuser, DBpass, DBname);
+	$con = mysqli_connect(DBhost, DBuser, DBpass, DBname);
 	$sql = "update board set subject='$subject', content='$content' ";
 	$sql .= " where num=$num";
 	mysqli_query($con, $sql);

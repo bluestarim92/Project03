@@ -199,7 +199,7 @@
 				<span class="col8">삭제</span>
 			</li>
 <?php
-	$con = mysqli_connect("localhost", DBuser, DBpass, DBname);
+	$con = mysqli_connect(DBhost, DBuser, DBpass, DBname);
 	$sql = "select * from members order by num desc";
 	$result = mysqli_query($con, $sql);
 	$total_record = mysqli_num_rows($result); // 전체 회원 수

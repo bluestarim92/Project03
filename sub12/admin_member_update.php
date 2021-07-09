@@ -20,7 +20,7 @@
 	$level = $_POST['level'];
 	$point = $_POST['point'];
 
-	$con = mysqli_connect('localhost', DBuser, DBpass, DBname);
+	$con = mysqli_connect(DBhost, DBuser, DBpass, DBname);
 	$sql = "update members set level=$level, point=$point where num=$num";
 	mysqli_query($con, $sql);
 

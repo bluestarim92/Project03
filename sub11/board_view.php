@@ -200,7 +200,7 @@
 	$num = $_GET['num'];
 	$page = $_GET['page'];
 
-	$con = mysqli_connect('localhost', DBuser, DBpass, DBname);
+	$con = mysqli_connect(DBhost, DBuser, DBpass, DBname);
 	$sql = "select * from board where num=$num";
 	$result = mysqli_query($con, $sql);
 
